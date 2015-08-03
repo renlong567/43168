@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-control" content="no-cache,no-store,must-revalidate,max-age=3" />
+	<meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT" />
+	<meta name="renderer" content="webkit">
+	<meta name="author" content="phpok,admin@phpok.com" />
+	<meta name="license" content="LGPL" />
+	<meta name="keywords" content="网站建设,企业网站建设,PHPOK网站建设,PHPOK企业网站建设" />
+	<meta name="description" content="高效的企业网站建设系统，可实现高定制化的企业网站电商系统，实现企业网站到电子商务企业网站。定制功能更高，操作更简单！" />
+	<title>MySQL安装后需要调整什么? - 公司新闻 - 资讯中心 - 网站建设|企业网站建设|PHPOK网站建设|PHPOK企业网站建设 - PHPOK企业网站</title>
+	<base href="http://phpok:81/" />
+	<script type="text/javascript" src="http://phpok:81/index.php?c=js&ext=jquery.artdialog.js" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="http://phpok:81/tpl/www/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="http://phpok:81/css/artdialog.css" />
+	<script type="text/javascript" src="http://phpok:81/tpl/www/js/global.js" charset="UTF-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$.cart.total();
+		$.phpok.json(api_url('login','status'),function(data){
+			if(data.status == 'ok'){
+				var logout = "javascript:$.user.logout('"+data.content.user_name+"');void(0)";
+				var html = ' | <a href="http://phpok:81/index.php?c=usercp">个人中心</a> | <a href="'+logout+'">退出</a>';
+			}else{
+				var html = ' | <a href="http://phpok:81/index.php?c=login">登录</a> | <a href="http://phpok:81/index.php?c=register">注册</a>';
+			}
+			$("#top_html_user_login").html(html);
+		});
+	});
+	</script>
+</head>
+<body>
+
+<div class="head">
+	<div class="logo"><a href="http://phpok:81/" title="PHPOK企业网站"><img src="res/201409/01/27a6e141c3d265ae.jpg" alt="PHPOK企业网站" /></a></div>
+	<div class="head_right">
+		<div class="top_nav">
+			<a href="http://phpok:81/index.php?c=cart" title="购物车">购物车 <span class="red">(<span id="head_cart_num">0</span>)</span></a>
+			<span id="top_html_user_login"></span>
+		</div>
+		<div class="search">
+			<form method="post" action="http://phpok:81/index.php?c=search" onsubmit="return top_search();">
+			<input name="keywords" value="" id="top-keywords" type="text" class="search_input" placeholder="请输入关键字" />
+			<input name="" type="submit" class="search_btn" value="" />
+			</form>
+		</div>
+	</div>
+	<div class="cl"></div>
+	<div class="nav">
+	<ul>
+						<li>
+			<a class="first" href="index.php" title="网站首页" target="_self">网站首页</a>
+					</li>
+				<li>
+			<a href="index.php?id=about-us" title="关于我们" target="_self">关于我们</a>
+						<ul>
+								<li><a href="index.php?id=contact-us" title="联系我们" target="_self">联系我们</a></li>
+								<li><a href="index.php?id=work" title="工作环境" target="_self">工作环境</a></li>
+								<li><a href="index.php?id=development-course" title="发展历程" target="_self">发展历程</a></li>
+							</ul>
+					</li>
+				<li class="current">
+			<a href="index.php?id=news" title="资讯中心" target="_self">资讯中心</a>
+						<ul>
+								<li><a href="index.php?id=news&cate=company" title="公司新闻" target="_self">公司新闻</a></li>
+								<li><a href="index.php?id=news&cate=industry" title="行业新闻" target="_self">行业新闻</a></li>
+							</ul>
+					</li>
+				<li>
+			<a href="index.php?id=product" title="产品展示" target="_self">产品展示</a>
+					</li>
+				<li>
+			<a href="index.php?id=book" title="在线留言" target="_self">在线留言</a>
+					</li>
+				<li>
+			<a href="index.php?id=photo" title="图集相册" target="_self">图集相册</a>
+					</li>
+				<li>
+			<a href="index.php?id=download-center" title="下载中心" target="_self">下载中心</a>
+					</li>
+				<li>
+			<a class="last" href="index.php?id=bbs" title="论坛BBS" target="_self">论坛BBS</a>
+					</li>
+			</ul>
+	</div>
+</div>
+<div class="wrap mb10">
+	<div class="page_left">
+		<dl class="sub_nav">
+	<dt>资讯中心</dt>
+			<dd class="on"><a href="http://phpok:81/html/news/company.html" title="公司新闻">公司新闻</a></dd>
+		<dd><a href="http://phpok:81/html/news/industry.html" title="行业新闻">行业新闻</a></dd>
+		<dd><a href="http://phpok:81/html/news/faq.html" title="常见问题">常见问题</a></dd>
+	</dl>		<dl class="page_contact">
+	<dt>联系我们</dt>
+	<dd>
+		<b>深圳市锟铻科技有限公司</b>		<div>地址：广东深圳市罗湖区东盛路辐照中心7栋3楼</div>		<div>Email：admin@domain.com</div>		<div>邮编：518000</div>		<div>电话：158185XXXXX</div>		<div>联系人：XXX</div>	</dd>
+</dl>	</div>
+	<div class="page_right">
+		<div class="page_right_title">
+			<span class="breadcrumbs">
+				您现在的位置：
+				<a href="http://phpok:81/" title="PHPOK企业网站">首页</a>
+				<span class="arrow">&nbsp;</span> <a href="http://phpok:81/html/news.html" title="资讯中心">资讯中心</a>
+								<span class="arrow">&nbsp;</span> <a href="http://phpok:81/html/news/company.html" title="公司新闻">公司新闻</a>
+							</span>
+			公司新闻		</div>
+		<div class="news_detail">
+			<h2>MySQL安装后需要调整什么?</h2>
+			<div class="news-extra-area">
+				发布日期：<span>2015年02月26日</span>&nbsp;&nbsp;&nbsp;
+				浏览次数：<span id="lblVisits">5</span>
+							</div>
+			<div class="d_txt"><p>面对MySQL的DBA或者做MySQL性能相关的工作的人，我最喜欢问的问题是，在MySQL服务器安装后，需要调整什么，假设是以缺省的设置安装的。</p><p>我很惊讶有非常多的人没有合理的回答，很多的MySQL服务器都在缺省的配置下运行。</p><p>尽管可以调整非常多的MySQL服务器变量，但是在通常情况下只有少数的变量是真正重要的。在设置完这些变量以后，其他变量的改动通常只能带来相对有限的性能改善。</p><p><strong>key_buffer_size</strong>：非常重要，如果使用MyISAM表。如果只使用MyISAM表，那么把它的值设置为可用内存的30%到40%。恰当的大小依赖索引的数量、数据量和负载 ----记住MyISAM使用操作系统的cache去缓存数据，所以也需要为它留出内存，而且数据通常比索引要大很多。然而需要查看是否所有的 key_buffer总是在被使用 ---- key_buffer为4G而.MYI文件只有1G的情况并不罕见。这样就有些浪费了。如果只是使用很少的MyISAM表，希望它的值小一些，但是仍然至少要设成16到32M，用于临时表（占用硬盘的）的索引。</p><p><strong>innodb_buffer_pool_size</strong>：非常重要，如果使用Innodb表。相对于MyISAM表而言，Innodb表对buffer size的大小更敏感。在处理大的数据集（data set）时，使用缺省的key_buffer_size和innodb_buffer_pool_size，MyISAM可能正常工作，而Innodb可能就是慢得像爬一样了。同时Innodb buffer pool缓存了数据和索引页，因此不需要为操作系统的缓存留空间，在只用Innodb的数据库服务器上，可以设成占内存的70%到80%。上面 key_buffer的规则也同样适用 ---- 如果只有小的数据集，而且也不会戏剧性地增大，那么不要把innodb_buffer_pool_size设得过大。因为可以更好地使用多余的内存。</p><p></p><p><strong>innodb_additional_pool_size</strong>：这个变量并不太影响性能，至少在有像样的（decent）内存分配的操作系统中是这样。但是仍然需要至少设为20MB（有时候更大），是Innodb分配出来用于处理一些杂事的。</p><p><strong>innodb_log_file_size</strong>：对于以写操作为主的负载(workload)非常重要，特别是数据集很大的时候。较大的值会提高性能，但增加恢复的时间。因此需要谨慎。我通常依据服务器的大小（server size）设置为64M到512M。</p><p><strong>innodb_log_buffer_size</strong>：缺省值在中等数量的写操作和短的事务的大多数负载情况下是够用的。如果有大量的UPDATE或者大量地使用blob，可能需要增加它的值。不要把它的值设得过多，否则会浪费内存--log buffer至少每秒刷新一次，没有必要使用超过一秒钟所需要的内存。8MB到16MB通常是足够的。小一些的安装应该使用更小的值。</p><p><strong>innodb_flush_logs_at_trx_commit</strong>：为Innodb比MyISAM慢100倍而哭泣？可能忘记了调整这个值。缺省值是1，即每次事务提交时都会把日志刷新到磁盘上，非常耗资源，特别是没有电池备份的cache时。很多应用程序，特别是那些从MyISAM表移植过来的，应该把它设成2。意味着只把日志刷新到操作系统的cache，而不刷新到磁盘。此时，日志仍然会每秒一次刷新到磁盘上，因此通常不会丢失超过1到2秒的更新。设成0会更快一些，但安全性差一些，在MySQL服务崩溃的时候，会丢失事务。设成2只会在操作系统崩溃的时候丢失数据。</p><p></p><p><strong>table_cache</strong>：打开表是昂贵的（耗资源）。例如，MyISAM表在MYI文件头做标记以标明哪些表正在使用。您不会希望这样的操作频繁发生，通常最好调整cache 大小，使其能够满足大多数打开的表的需要。它使用了一些操作系统的资源和内存，但是对于现代的硬件水平来说通常不是问题。对于一个使用几百个表的应用， 1024是一个合适的值（注意每个连接需要各自的缓存）。如果有非常多的连接或者非常多的表，则需要增大它的值。我曾经看到过使用超过100000的值。</p><p></p><p><strong>thread_cache</strong>：线程创建/销毁是昂贵的，它在每次连接和断开连接时发生。我通常把这个值至少设成16。如果应用有时会有大量的并发连接，并且可以看到 threads_created变量迅速增长，我就把它的值调高。目标是在通常的操作中不要有线程的创建。</p><p><strong>query_cache</strong>：如果应用是以读为主的，并且没有应用级的缓存，那么它会有很大帮助。不要把它设得过大，因为它的维护可能会导致性能下降。通常会设置在32M到 512M之间。设置好后，经过一段时间要进行检查，看看是否合适。对于某些工作负载，缓存命中率低于会就启用它。</p><p>注意：就像看到的，上面所说的都是全局变量。这些变量依赖硬件和存储引擎的使用，而会话级的变量（per session variables）则与特定的访问量(workload)相关。如果只是一些简单的查询，就没有必要增加sort_buffer_size，即使有 64G的内存让您去浪费。而且这样做还可能降低性能。我通常把调整会话级的变量放在第二步，在我分析了访问量（或负载）之后。</p><p>此外在MySQL分发版中包含了一些my.cnf文件的例子，可以作为非常好的模板去使用。如果能够恰当地从中选择一个，通常会比缺省值要好。</p></div>
+			<div class="d_page">
+				<p>上一主题：
+															<a href="http://phpok:81/html/201502/1370.html" title="MySQL出错代码">MySQL出错代码</a>
+									</p>
+				<p>下一主题：
+															<a href="http://phpok:81/html/201502/1372.html" title="FTP软件使用中的PASV和PORT上传模式">FTP软件使用中的PASV和PORT上传模式</a>
+									</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+$(document).ready(function(){
+	$("#comment_post").submit(function(){
+		$(this).ajaxSubmit({
+			'url':api_url('comment','save','id=1371'),
+			'type':'post',
+			'dataType':'json',
+			'success':function(rs){
+				if(rs.status != 'ok')
+				{
+					alert(rs.content);
+					return false;
+				}
+				else
+				{
+					alert('您的评论已成功提交');
+					$.phpok.reload();
+					return true;
+				}
+			}
+		});
+		return false;
+	});
+});
+</script>
+<div class="comment">
+	<h4 class="title">评论：MySQL安装后需要调整什么?</h4>
+					<dl>
+		<dt><img src="tpl/www/images/avatar_huge.gif" alt="游客" /></dt>
+		<dd>
+			<div class="Remarks">
+				<span class="icon icon-left-arrow"></span>
+				<div class="not_popedom">
+					您没有评论权限，请先
+					<a href="javascript:$.user.login('会员登录');void(0);" title="登录">登录</a> 或 
+					<a href="http://phpok:81/index.php?c=register&_back=http%3A%2F%2Fphpok%3A81%2Findex.php%3Fid%3D1371" title="注册">注册</a>
+				</div>
+			</div>
+		</dd>
+	</dl>
+	</div>
+	</div>
+	<div class="cl"></div>
+</div>
+<div class="foot">
+	<div class="copyright">
+						<a href="index.php?id=about-us" title="公司简介" target="_self">公司简介</a>
+		 | 				<a href="index.php?id=development-course" title="发展历程" target="_self">发展历程</a>
+		 | 				<a href="index.php?id=news" title="新闻中心" target="_self">新闻中心</a>
+		 | 				<a href="index.php?id=book" title="在线留言" target="_self">在线留言</a>
+		 | 				<a href="index.php?id=contact-us" title="联系我们" target="_self">联系我们</a>
+		<br />				Powered By phpok.com 版权所有 © 2004-2014, All right reserved.		<div class="debug">运行0.09178秒，内存使用1.81 MB，数据库执行12次，耗时0.00619秒，缓存执行44次，耗时0.02935秒</div>
+	</div>
+</div>
+</body>
+</html>

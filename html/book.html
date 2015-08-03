@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-control" content="no-cache,no-store,must-revalidate,max-age=3" />
+	<meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT" />
+	<meta name="renderer" content="webkit">
+	<meta name="author" content="phpok,admin@phpok.com" />
+	<meta name="license" content="LGPL" />
+	<meta name="keywords" content="网站建设,企业网站建设,PHPOK网站建设,PHPOK企业网站建设" />
+	<meta name="description" content="高效的企业网站建设系统，可实现高定制化的企业网站电商系统，实现企业网站到电子商务企业网站。定制功能更高，操作更简单！" />
+	<title>在线留言 - 网站建设|企业网站建设|PHPOK网站建设|PHPOK企业网站建设 - PHPOK企业网站</title>
+	<base href="http://phpok:81/" />
+	<script type="text/javascript" src="http://phpok:81/index.php?c=js&ext=jquery.artdialog.js" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="http://phpok:81/tpl/www/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="http://phpok:81/css/artdialog.css" />
+	<script type="text/javascript" src="http://phpok:81/tpl/www/js/global.js" charset="UTF-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$.cart.total();
+		$.phpok.json(api_url('login','status'),function(data){
+			if(data.status == 'ok'){
+				var logout = "javascript:$.user.logout('"+data.content.user_name+"');void(0)";
+				var html = ' | <a href="http://phpok:81/index.php?c=usercp">个人中心</a> | <a href="'+logout+'">退出</a>';
+			}else{
+				var html = ' | <a href="http://phpok:81/index.php?c=login">登录</a> | <a href="http://phpok:81/index.php?c=register">注册</a>';
+			}
+			$("#top_html_user_login").html(html);
+		});
+	});
+	</script>
+</head>
+<body>
+
+<div class="head">
+	<div class="logo"><a href="http://phpok:81/" title="PHPOK企业网站"><img src="res/201409/01/27a6e141c3d265ae.jpg" alt="PHPOK企业网站" /></a></div>
+	<div class="head_right">
+		<div class="top_nav">
+			<a href="http://phpok:81/index.php?c=cart" title="购物车">购物车 <span class="red">(<span id="head_cart_num">0</span>)</span></a>
+			<span id="top_html_user_login"></span>
+		</div>
+		<div class="search">
+			<form method="post" action="http://phpok:81/index.php?c=search" onsubmit="return top_search();">
+			<input name="keywords" value="" id="top-keywords" type="text" class="search_input" placeholder="请输入关键字" />
+			<input name="" type="submit" class="search_btn" value="" />
+			</form>
+		</div>
+	</div>
+	<div class="cl"></div>
+	<div class="nav">
+	<ul>
+						<li>
+			<a class="first" href="index.php" title="网站首页" target="_self">网站首页</a>
+					</li>
+				<li>
+			<a href="index.php?id=about-us" title="关于我们" target="_self">关于我们</a>
+						<ul>
+								<li><a href="index.php?id=contact-us" title="联系我们" target="_self">联系我们</a></li>
+								<li><a href="index.php?id=work" title="工作环境" target="_self">工作环境</a></li>
+								<li><a href="index.php?id=development-course" title="发展历程" target="_self">发展历程</a></li>
+							</ul>
+					</li>
+				<li>
+			<a href="index.php?id=news" title="资讯中心" target="_self">资讯中心</a>
+						<ul>
+								<li><a href="index.php?id=news&cate=company" title="公司新闻" target="_self">公司新闻</a></li>
+								<li><a href="index.php?id=news&cate=industry" title="行业新闻" target="_self">行业新闻</a></li>
+							</ul>
+					</li>
+				<li>
+			<a href="index.php?id=product" title="产品展示" target="_self">产品展示</a>
+					</li>
+				<li class="current">
+			<a href="index.php?id=book" title="在线留言" target="_self">在线留言</a>
+					</li>
+				<li>
+			<a href="index.php?id=photo" title="图集相册" target="_self">图集相册</a>
+					</li>
+				<li>
+			<a href="index.php?id=download-center" title="下载中心" target="_self">下载中心</a>
+					</li>
+				<li>
+			<a class="last" href="index.php?id=bbs" title="论坛BBS" target="_self">论坛BBS</a>
+					</li>
+			</ul>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#book_post").submit(function(){
+		//提交表单
+		if(!$('#title').val())
+		{
+			alert("留言主题不能为空");
+			return false;
+		}
+		if(!$('#fullname').val())
+		{
+			alert('留言人姓名不能为空');
+			return false;
+		}
+		if(!$('#email').val())
+		{
+			alert('邮箱不能为空');
+			return false;
+		}
+		if(!$('#content').val())
+		{
+			alert('留言内容不能为空');
+			return false;
+		}
+		$(this).ajaxSubmit({
+			'url':api_url('post','save'),
+			'type':'post',
+			'dataType':'json',
+			'success':function(rs){
+				if(rs.status == 'ok')
+				{
+					alert('您的留言信息已发布，请耐心等候管理员审核，感谢您的提交');
+					$.phpok.reload();
+				}
+				else
+				{
+					alert(rs.content);
+					$("#update_vcode").phpok_vcode();
+					$("#_chkcode").val('');
+					return false;
+				}
+			}
+		});
+		return false;
+	});
+});
+</script>
+<div class="wrap mb10">
+	<div class="page_left">
+		<dl class="sub_nav">
+			<dt>在线留言</dt>
+			<dd><a href="http://phpok:81/html/book.html">在线留言</a></dd>
+		</dl>
+		<dl class="page_contact">
+	<dt>联系我们</dt>
+	<dd>
+		<b>深圳市锟铻科技有限公司</b>		<div>地址：广东深圳市罗湖区东盛路辐照中心7栋3楼</div>		<div>Email：admin@domain.com</div>		<div>邮编：518000</div>		<div>电话：158185XXXXX</div>		<div>联系人：XXX</div>	</dd>
+</dl>	</div>
+	<div class="page_right">
+		<div class="page_right_title">
+			<span class="breadcrumbs">
+				您现在的位置：
+				<a href="http://phpok:81/" title="PHPOK企业网站">首页</a>
+				<span class="arrow">&nbsp;</span> <a href="http://phpok:81/html/book.html" title="在线留言">在线留言</a>
+			</span>
+			在线留言		</div>
+		<div class="book">
+						<dl>
+				<dt>测试一下留言功能<span class="extinfo"> <span class="who">seika</span> 发表于2014年09月17日</span></dt>
+				<dd>
+					<div class="message">这个留言是测试用的！</div>
+										<div class="adm_reply"><p><embed type="application/x-shockwave-flash" class="edui-faked-video" pluginspage="http://www.macromedia.com/go/getflashplayer" src="http://player.56.com/v_ODczMjc5OTM.swf" width="420" height="280" wmode="transparent" play="true" loop="false" menu="false" allowscriptaccess="never" allowfullscreen="true"/></p></div>
+									</dd>
+			</dl>
+						<dl>
+				<dt>测试留言<span class="extinfo"> <span class="who">seika</span> 发表于2014年08月06日</span></dt>
+				<dd>
+					<div class="message">这个是测试用的</div>
+									</dd>
+			</dl>
+						<dl>
+				<dt>测试留言<span class="extinfo"> <span class="who">seika</span> 发表于2014年07月19日</span></dt>
+				<dd>
+					<div class="message">这个内容是测试的`</div>
+									</dd>
+			</dl>
+						<dl>
+				<dt>测试下留言<span class="extinfo"> <span class="who">test</span> 发表于2014年06月03日</span></dt>
+				<dd>
+					<div class="message">这个留言是测试用的</div>
+									</dd>
+			</dl>
+						<dl>
+				<dt>测试留言<span class="extinfo"> <span class="who">测试留言</span> 发表于2014年05月05日</span></dt>
+				<dd>
+					<div class="message">测试留言</div>
+									</dd>
+			</dl>
+						<dl>
+				<dt>测试留言<span class="extinfo"> <span class="who">这个是测试的</span> 发表于2014年04月08日</span></dt>
+				<dd>
+					<div class="message">这个也是测试的</div>
+									</dd>
+			</dl>
+						<dl>
+				<dt>测试的留言<span class="extinfo"> <span class="who">phpok</span> 发表于2014年02月14日</span></dt>
+				<dd>
+					<div class="message">您好，测试最新留言功能</div>
+										<div class="adm_reply"><p>测试管理员回复，感<strong>谢您的</strong>支持，回复支持HTML噢！</p></div>
+									</dd>
+			</dl>
+						<div class="pages" >
+<ul>
+		<li>
+				<span>首页</span>
+			</li>
+		<li>
+				<span>上一页</span>
+			</li>
+		<li class="current">
+				<a href="http://phpok:81/html/book.html" title="1">1</a>
+			</li>
+		<li>
+				<span>下一页</span>
+			</li>
+		<li>
+				<span>末页</span>
+			</li>
+	</ul>
+</div>			<dl id="post" class="mess">
+				<dt>发布新留言</dt>
+				<dd>
+					<form method="post" id="book_post">
+					<input type="hidden" name="id" id="id" value="book" />
+										<table width="100%">
+															<tr>
+						<td width="150px" align="right">留言主题：</td>
+						<td class="td"><input type="text" id="title" class="inp inp_title" name="title" style="width:300px" value="" placeholder="" />
+</td>
+					</tr>
+																				<tr>
+						<td width="150px" align="right">姓名：</td>
+						<td class="td"><input type="text" id="fullname" class="inp inp_fullname" name="fullname" style="width:300px" value="" placeholder="" />
+</td>
+					</tr>
+																				<tr>
+						<td width="150px" align="right">邮箱：</td>
+						<td class="td"><input type="text" id="email" class="inp inp_email" name="email" style="width:300px" value="" placeholder="" />
+</td>
+					</tr>
+																				<tr>
+						<td width="150px" align="right">图片：</td>
+						<td class="td"><link rel="stylesheet" type="text/css" href="js/webuploader/webuploader.css" />
+<script type="text/javascript" src="js/webuploader/webuploader.min.js"></script>
+<script type="text/javascript" src="js/webuploader/admin.upload.js"></script>
+<input type="hidden" name="pic" id="pic" value="" />
+<input type="hidden" id="pic_status" value="" />
+<style type="text/css">
+.pic_thumb{float:left;width:144px;margin:3px 5px;padding:1px;border:1px solid #ccc;border-radius:3px;position:relative;}
+.pic_thumb img{padding:2px;}
+.pic_thumb .sort{position:absolute;right:5px;top:5px;}
+.pic_thumb .sort input.taxis{width:40px;border:1px solid #ccc;border-radius:3px;height:22px;text-align:center;padding:3px;}
+.phpok-btn{
+	position:relative;
+	overflow:visible;
+	display:inline-block;
+	padding:0.2em 0.6em;
+	border:1px solid #d4d4d4;
+	margin:0;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0 #fff;
+	font:14px/normal "Microsoft Yahei","宋体","Arial",sans-serif;
+	color:#333;
+	white-space:nowrap;
+	cursor:pointer;
+	outline:none;
+	background-color:#ececec;
+	background-image:-webkit-gradient(linear,0 0,0 100%,from(#f4f4f4),to(#ececec));
+	background-image:-moz-linear-gradient(#f4f4f4,#ececec);
+	background-image:-ms-linear-gradient(#f4f4f4,#ececec);
+	background-image:-o-linear-gradient(#f4f4f4,#ececec);
+	background-image:linear-gradient(#f4f4f4,#ececec);
+	-moz-background-clip:padding;
+	background-clip:padding-box;
+	border-radius:3px;
+	zoom:1;
+	*display:inline
+}
+
+.phpok-btn:hover,
+.phpok-btn:focus,
+.phpok-btn:active,
+.phpok-btn.active {
+	border-color: #3072b3;
+	border-bottom-color: #2a65a0;
+	text-decoration: none;
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+	color: #fff;
+	background-color: #3c8dde;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+	background-image: -moz-linear-gradient(#599bdc, #3072b3);
+	background-image: -o-linear-gradient(#599bdc, #3072b3);
+	background-image: linear-gradient(#599bdc, #3072b3);
+}
+
+.phpok-btn:active,
+.phpok-btn.active {
+	border-color: #2a65a0;
+	border-bottom-color: #3884cd;
+	background-color: #3072b3;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
+	background-image: -moz-linear-gradient(#3072b3, #599bdc);
+	background-image: -ms-linear-gradient(#3072b3, #599bdc);
+	background-image: -o-linear-gradient(#3072b3, #599bdc);
+	background-image: linear-gradient(#3072b3, #599bdc);
+}
+
+.phpok-btn::-moz-focus-inner {padding: 0;border: 0;}
+
+.button-group {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* IE hacks */
+    zoom: 1;
+    *display: inline;
+}
+
+.phpok-btn + .phpok-btn,
+.phpok-btn + .button-group,
+.button-group + .phpok-btn,
+.button-group + .button-group {
+    margin-left: 15px;
+}
+
+.button-group li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.button-group .phpok-btn {
+    float: left;
+    margin-left: -1px;
+}
+
+.button-group > .phpok-btn:not(:first-child):not(:last-child),
+.button-group li:not(:first-child):not(:last-child) .phpok-btn {
+    border-radius: 0;
+}
+
+.button-group > .phpok-btn:first-child,
+.button-group li:first-child .phpok-btn {
+    margin-left: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button-group > .phpok-btn:last-child,
+.button-group li:last-child > .phpok-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+</style>
+<div class="_e_upload">
+	<div class="_select">
+		<table>
+		<tr>
+			<td><div id="pic_picker"></div></td>
+						<td id="pic_sort" style="display:none">
+				<button onclick="obj_pic.sort()" class="button" type="button">排序</button>
+				<button onclick="obj_pic.sort('title')" class="button" type="button">自然排序</button>
+			</td>
+			<td><div class="gray i" style="line-height:180%;">&nbsp;支持格式有：*.png, *.jpg, *.gif</div></td>
+		</tr>
+		</table>
+	</div>
+	<div class="_progress" id="pic_progress"></div>
+	<div class="_list" id="pic_list"></div>
+	<div class="clear"></div>
+</div>
+<script type="text/javascript">
+var obj_pic;
+$(document).ready(function(){
+	//清空本地存储，防止异常删除
+	$.dialog.data('upload-pic','');
+	obj_pic = new $.admin_upload({
+		'id':'pic',
+		'swf':'js/webuploader/uploader.swf',
+		'server':'http://phpok:81/index.php?c=upload&f=save&cateid=1',
+		'pick':{'id':'#pic_picker','multiple':false},
+		'resize':false,
+		'multiple':"false",
+		"formData":{'PHPSESSID':'dtghofbq2hnvhhlsnuoomn25m6'},
+		'fileVal':'upfile',
+		'disableGlobalDnd':true,
+		'compress':false,
+		'auto':true,
+		'accept':{'title':'图片(*.png, *.jpg, *.gif)','extensions':'png,jpg,gif'},
+		'fileSingleSizeLimit':'204800'
+	});
+	obj_pic.showhtml();
+});
+</script>
+
+</td>
+					</tr>
+																				<tr>
+						<td width="150px" align="right">内容：</td>
+						<td class="td"><table style="border:0;margin:0;padding:0" cellpadding="0" cellspacing="0"><tr><td><textarea name="content" id="content" phpok_id="textarea" style=";width:500px;height:180px"></textarea></td></tr></table></td>
+					</tr>
+																				<tr>
+						<td align="right">验证码：</td>
+						<td class="td">
+							<table cellpadding="0" cellspacing="0" width="180px">
+							<tr>
+								<td><input type="text" name="_chkcode" id="_chkcode" class="vcode" /></td>
+								<td align="right"><img src="" border="0" align="absmiddle" id="update_vcode" class="hand"></td>
+							</tr>
+							</table>
+							<script type="text/javascript">
+							$(document).ready(function(){
+								$("#update_vcode").phpok_vcode();
+								//更新点击时操作
+								$("#update_vcode").click(function(){
+									$(this).phpok_vcode();
+								});
+							});
+							</script>
+						</td>
+					</tr>
+										<tr>
+						<td>&nbsp;</td>
+						<td><input type="submit" value=" 提交 " class="submit" /></td>
+					</tr>
+					</table>
+					</form>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="cl"></div>
+</div>
+<div class="foot">
+	<div class="copyright">
+						<a href="index.php?id=about-us" title="公司简介" target="_self">公司简介</a>
+		 | 				<a href="index.php?id=development-course" title="发展历程" target="_self">发展历程</a>
+		 | 				<a href="index.php?id=news" title="新闻中心" target="_self">新闻中心</a>
+		 | 				<a href="index.php?id=book" title="在线留言" target="_self">在线留言</a>
+		 | 				<a href="index.php?id=contact-us" title="联系我们" target="_self">联系我们</a>
+		<br />				Powered By phpok.com 版权所有 © 2004-2014, All right reserved.		<div class="debug">运行0.11587秒，内存使用1.89 MB，数据库执行12次，耗时0.00853秒，缓存执行49次，耗时0.05158秒</div>
+	</div>
+</div>
+</body>
+</html>

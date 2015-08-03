@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-control" content="no-cache,no-store,must-revalidate,max-age=3" />
+	<meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT" />
+	<meta name="renderer" content="webkit">
+	<meta name="author" content="phpok,admin@phpok.com" />
+	<meta name="license" content="LGPL" />
+	<meta name="keywords" content="网站建设,企业网站建设,PHPOK网站建设,PHPOK企业网站建设" />
+	<meta name="description" content="高效的企业网站建设系统，可实现高定制化的企业网站电商系统，实现企业网站到电子商务企业网站。定制功能更高，操作更简单！" />
+	<title>资讯中心 - 网站建设|企业网站建设|PHPOK网站建设|PHPOK企业网站建设 - PHPOK企业网站</title>
+	<base href="http://phpok:81/" />
+	<script type="text/javascript" src="http://phpok:81/index.php?c=js&ext=jquery.artdialog.js" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="http://phpok:81/tpl/www/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="http://phpok:81/css/artdialog.css" />
+	<script type="text/javascript" src="http://phpok:81/tpl/www/js/global.js" charset="UTF-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$.cart.total();
+		$.phpok.json(api_url('login','status'),function(data){
+			if(data.status == 'ok'){
+				var logout = "javascript:$.user.logout('"+data.content.user_name+"');void(0)";
+				var html = ' | <a href="http://phpok:81/index.php?c=usercp">个人中心</a> | <a href="'+logout+'">退出</a>';
+			}else{
+				var html = ' | <a href="http://phpok:81/index.php?c=login">登录</a> | <a href="http://phpok:81/index.php?c=register">注册</a>';
+			}
+			$("#top_html_user_login").html(html);
+		});
+	});
+	</script>
+</head>
+<body>
+
+<div class="head">
+	<div class="logo"><a href="http://phpok:81/" title="PHPOK企业网站"><img src="res/201409/01/27a6e141c3d265ae.jpg" alt="PHPOK企业网站" /></a></div>
+	<div class="head_right">
+		<div class="top_nav">
+			<a href="http://phpok:81/index.php?c=cart" title="购物车">购物车 <span class="red">(<span id="head_cart_num">0</span>)</span></a>
+			<span id="top_html_user_login"></span>
+		</div>
+		<div class="search">
+			<form method="post" action="http://phpok:81/index.php?c=search" onsubmit="return top_search();">
+			<input name="keywords" value="" id="top-keywords" type="text" class="search_input" placeholder="请输入关键字" />
+			<input name="" type="submit" class="search_btn" value="" />
+			</form>
+		</div>
+	</div>
+	<div class="cl"></div>
+	<div class="nav">
+	<ul>
+						<li>
+			<a class="first" href="index.php" title="网站首页" target="_self">网站首页</a>
+					</li>
+				<li>
+			<a href="index.php?id=about-us" title="关于我们" target="_self">关于我们</a>
+						<ul>
+								<li><a href="index.php?id=contact-us" title="联系我们" target="_self">联系我们</a></li>
+								<li><a href="index.php?id=work" title="工作环境" target="_self">工作环境</a></li>
+								<li><a href="index.php?id=development-course" title="发展历程" target="_self">发展历程</a></li>
+							</ul>
+					</li>
+				<li class="current">
+			<a href="index.php?id=news" title="资讯中心" target="_self">资讯中心</a>
+						<ul>
+								<li><a href="index.php?id=news&cate=company" title="公司新闻" target="_self">公司新闻</a></li>
+								<li><a href="index.php?id=news&cate=industry" title="行业新闻" target="_self">行业新闻</a></li>
+							</ul>
+					</li>
+				<li>
+			<a href="index.php?id=product" title="产品展示" target="_self">产品展示</a>
+					</li>
+				<li>
+			<a href="index.php?id=book" title="在线留言" target="_self">在线留言</a>
+					</li>
+				<li>
+			<a href="index.php?id=photo" title="图集相册" target="_self">图集相册</a>
+					</li>
+				<li>
+			<a href="index.php?id=download-center" title="下载中心" target="_self">下载中心</a>
+					</li>
+				<li>
+			<a class="last" href="index.php?id=bbs" title="论坛BBS" target="_self">论坛BBS</a>
+					</li>
+			</ul>
+	</div>
+</div>
+<div class="wrap mb10">
+	<div class="page_left">
+		<dl class="sub_nav">
+	<dt>资讯中心</dt>
+			<dd><a href="http://phpok:81/html/news/company.html" title="公司新闻">公司新闻</a></dd>
+		<dd><a href="http://phpok:81/html/news/industry.html" title="行业新闻">行业新闻</a></dd>
+		<dd><a href="http://phpok:81/html/news/faq.html" title="常见问题">常见问题</a></dd>
+	</dl>		<dl class="page_contact">
+	<dt>联系我们</dt>
+	<dd>
+		<b>深圳市锟铻科技有限公司</b>		<div>地址：广东深圳市罗湖区东盛路辐照中心7栋3楼</div>		<div>Email：admin@domain.com</div>		<div>邮编：518000</div>		<div>电话：158185XXXXX</div>		<div>联系人：XXX</div>	</dd>
+</dl>	</div>
+	<div class="page_right">
+		<div class="page_right_title">
+			<span class="breadcrumbs">
+				您现在的位置：
+				<a href="http://phpok:81/" title="PHPOK企业网站">首页</a>
+				<span class="arrow">&nbsp;</span> <a href="http://phpok:81/html/news.html" title="资讯中心">资讯中心</a>
+								<span class="arrow">&nbsp;</span> <a href="" title=""></a>
+							</span>
+			资讯中心		</div>
+		<ul class="news_list">
+						<li>
+								<h3><a href="http://phpok:81/html/201507/1396.html" title="测试添加视频">测试添加视频</a></h3>
+				<div class="n-txt">
+					测试添加视频					<span class="more">[<a href="http://phpok:81/html/201507/1396.html" title="查看测试添加视频详细信息">查看更多</a>]</span>
+				</div>
+			</li>
+						<li>
+								<span class="n-img"><a href="http://phpok:81/html/201506/1382.html" title="站点采用HTTPS协议的利弊分析、及SEO建议"><img src="res/201504/10/thumb_736.png" alt="站点采用HTTPS协议的利弊分析、及SEO建议" /></a></span>
+								<h3><a href="http://phpok:81/html/201506/1382.html" title="站点采用HTTPS协议的利弊分析、及SEO建议">站点采用HTTPS协议的利弊分析、及SEO建议</a></h3>
+				<div class="n-txt">
+					注：本文作者为Moz网站专栏作家Cyrus Shepard，是一篇关于“HTTPS站点优化建议及技巧”的分享型文章。文章写于谷歌宣布将“HTTPS协议作为搜索引擎排名参考因素”后。谷歌几乎没有明确对外公开过影响谷歌搜索引擎排名的因素具体有哪些，因而当其在去年8月份宣布采用“HTTPS加密协议有利于搜索引擎排名”时，我的心情就两字儿：震惊！HTTPS与其他的谷歌参考因素不同，实行起来比较复杂，有一定的风险性，而且还需一些额外的费用。但利益也是显而易见的，使用HTTPS协议的站点更安全、且在…					<span class="more">[<a href="http://phpok:81/html/201506/1382.html" title="查看站点采用HTTPS协议的利弊分析、及SEO建议详细信息">查看更多</a>]</span>
+				</div>
+			</li>
+						<li>
+								<span class="n-img"><a href="http://phpok:81/html/201504/1381.html" title="科技进步给工人带来失业恐惧？"><img src="res/201504/10/thumb_734.jpg" alt="科技进步给工人带来失业恐惧？" /></a></span>
+								<h3><a href="http://phpok:81/html/201504/1381.html" title="科技进步给工人带来失业恐惧？">科技进步给工人带来失业恐惧？</a></h3>
+				<div class="n-txt">
+					80后的我们生活在一个幸福的时代，至少跟自己的父辈比起来我们会用电子产品，生活上不愁吃不饱穿不暖。可是就是在这样的时代，有人觉得科技发展的脚步危及到自己的生存乐土。可在物竞天择的时代，我不赞同他们！					<span class="more">[<a href="http://phpok:81/html/201504/1381.html" title="查看科技进步给工人带来失业恐惧？详细信息">查看更多</a>]</span>
+				</div>
+			</li>
+						<li>
+								<span class="n-img"><a href="http://phpok:81/html/201502/1373.html" title="来自工程师的8项Web性能提升建议"><img src="res/201502/26/thumb_726.jpg" alt="来自工程师的8项Web性能提升建议" /></a></span>
+								<h3><a href="http://phpok:81/html/201502/1373.html" title="来自工程师的8项Web性能提升建议">来自工程师的8项Web性能提升建议</a></h3>
+				<div class="n-txt">
+					在互联网盛行的今天，越来越多的在线用户希望得到安全可靠并且快速的访问体验。针对Web网页过于膨胀以及第三脚本蚕食流量等问题，Radware向网站运营人员提出以下改进建议，帮助他们为用户提供最快最优质的访问体验。89977123341243					<span class="more">[<a href="http://phpok:81/html/201502/1373.html" title="查看来自工程师的8项Web性能提升建议详细信息">查看更多</a>]</span>
+				</div>
+			</li>
+						<li>
+								<h3><a href="http://phpok:81/html/201502/1372.html" title="FTP软件使用中的PASV和PORT上传模式">FTP软件使用中的PASV和PORT上传模式</a></h3>
+				<div class="n-txt">
+					一、FTP连接中的PASV和PORT模式：PORT：其实是Standard模式的另一个名字，又称为Active模式。中文意思是“主动模式；PASV：也就是Passive的简写，中文就是“被动模式。二、两者之间有什么不同：1、不同之处是由于PORT这个方式需要在接上TCP 21端口后，服务器通过自己的TCP 20来发出数据。并且需要建立一个新的连接来传送档案。而PORT的命令包含一些客户端没用的资料，所以有了PASv的出现；2、而PASV模式就当然拥有PORT模式的优点及去掉一些PORT的缺点。PASV运行方式就是当服务器接收到…					<span class="more">[<a href="http://phpok:81/html/201502/1372.html" title="查看FTP软件使用中的PASV和PORT上传模式详细信息">查看更多</a>]</span>
+				</div>
+			</li>
+						<li>
+								<h3><a href="http://phpok:81/html/201502/1371.html" title="MySQL安装后需要调整什么?">MySQL安装后需要调整什么?</a></h3>
+				<div class="n-txt">
+					面对MySQL的DBA或者做MySQL性能相关的工作的人，我最喜欢问的问题是，在MySQL服务器安装后，需要调整什么，假设是以缺省的设置安装的。我很惊讶有非常多的人没有合理的回答，很多的MySQL服务器都在缺省的配置下运行。尽管可以调整非常多的MySQL服务器变量，但是在通常情况下只有少数的变量是真正重要的。在设置完这些变量以后，其他变量的改动通常只能带来相对有限的性能改善。key_buffer_size：非常重要，如果使用MyISAM表。如果只使用MyISAM表，那么把它的值设置为可用内存的30%到40…					<span class="more">[<a href="http://phpok:81/html/201502/1371.html" title="查看MySQL安装后需要调整什么?详细信息">查看更多</a>]</span>
+				</div>
+			</li>
+						<li>
+								<h3><a href="http://phpok:81/html/201502/1370.html" title="MySQL出错代码">MySQL出错代码</a></h3>
+				<div class="n-txt">
+					1005：创建表失败1006：创建数据库失败1007：数据库已存在，创建数据库失败1008：数据库不存在，删除数据库失败1009：不能删除数据库文件导致删除数据库失败1010：不能删除数据目录导致删除数据库失败1011：删除数据库文件失败1012：不能读取系统表中的记录1020：记录已被其他用户修改1021：硬盘剩余空间不足，请加大硬盘可用空间1022：关键字重复，更改记录失败1023：关闭时发生错误1024：读文件错误1025：更改名字时发生错误1026：写文件错误1032：记录不存在1036：数据表是只读的，…					<span class="more">[<a href="http://phpok:81/html/201502/1370.html" title="查看MySQL出错代码详细信息">查看更多</a>]</span>
+				</div>
+			</li>
+						<li>
+								<span class="n-img"><a href="http://phpok:81/html/201502/1369.html" title="金山 WPS - 免费正版办公软件(支持Win/Linux/手机)"><img src="res/201502/26/thumb_725.jpg" alt="金山 WPS - 免费正版办公软件(支持Win/Linux/手机)" /></a></span>
+								<h3><a href="http://phpok:81/html/201502/1369.html" title="金山 WPS - 免费正版办公软件(支持Win/Linux/手机)">金山 WPS - 免费正版办公软件(支持Win/Linux/手机)</a></h3>
+				<div class="n-txt">
+					一直以来办公软件市场份额都是被微软的 Office 牢牢占据，但其价格较贵，国内大多都是用着盗版。其实国产免费的 WPS 已经完完全全可以和Office媲美，且完美兼容各种doc、docx、xls、xlsx、ppt等微软文档格式！					<span class="more">[<a href="http://phpok:81/html/201502/1369.html" title="查看金山 WPS - 免费正版办公软件(支持Win/Linux/手机)详细信息">查看更多</a>]</span>
+				</div>
+			</li>
+						<li>
+								<span class="n-img"><a href="http://phpok:81/html/201502/1368.html" title="EverEdit - 值得关注的代码编辑器"><img src="res/201502/26/thumb_724.jpg" alt="EverEdit - 值得关注的代码编辑器" /></a></span>
+								<h3><a href="http://phpok:81/html/201502/1368.html" title="EverEdit - 值得关注的代码编辑器">EverEdit - 值得关注的代码编辑器</a></h3>
+				<div class="n-txt">
+					EverEdit 是一款相当优秀国产的免费文本(代码)编辑器，最初这项目是为了解决 EditPlus 的一些不足并增强其功能而开始的，比如 Editplus 的着色器较为简陋，无法进行复杂着色，如markdown语法; 也不支持自动完成, 还有多点 Snippet 等等。					<span class="more">[<a href="http://phpok:81/html/201502/1368.html" title="查看EverEdit - 值得关注的代码编辑器详细信息">查看更多</a>]</span>
+				</div>
+			</li>
+					</ul>
+		<div class="pages" >
+<ul>
+		<li>
+				<span>首页</span>
+			</li>
+		<li>
+				<span>上一页</span>
+			</li>
+		<li class="current">
+				<a href="http://phpok:81/html/news.html" title="1">1</a>
+			</li>
+		<li>
+				<span>下一页</span>
+			</li>
+		<li>
+				<span>末页</span>
+			</li>
+	</ul>
+</div>	</div>
+	<div class="cl"></div>
+</div>
+<div class="foot">
+	<div class="copyright">
+						<a href="index.php?id=about-us" title="公司简介" target="_self">公司简介</a>
+		 | 				<a href="index.php?id=development-course" title="发展历程" target="_self">发展历程</a>
+		 | 				<a href="index.php?id=news" title="新闻中心" target="_self">新闻中心</a>
+		 | 				<a href="index.php?id=book" title="在线留言" target="_self">在线留言</a>
+		 | 				<a href="index.php?id=contact-us" title="联系我们" target="_self">联系我们</a>
+		<br />				Powered By phpok.com 版权所有 © 2004-2014, All right reserved.		<div class="debug">运行0.20897秒，内存使用2.12 MB，数据库执行18次，耗时0.01061秒，缓存执行114次，耗时0.09509秒</div>
+	</div>
+</div>
+</body>
+</html>

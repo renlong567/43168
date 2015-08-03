@@ -1,0 +1,58 @@
+<!-- include tpl=head title="修改个人资料 - 个人中心" -->
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#userinfo_submit").submit(function(){
+		$(this).ajaxSubmit({
+			type:'post',
+			url: api_url('usercp','info'),
+			dataType:'json',
+			success: function(rs){
+				if(rs.status == 'ok'){
+					alert("您的信息更新成功");
+					$.phpok.reload();
+				}else{
+					if(!rs.content) rs.content = '信息更新失败';
+					alert(rs.content);
+					return false;
+				}
+			}
+		});
+		return false;
+	});
+});
+</script>
+<div class="cp">
+	<div class="left"><!-- include tpl=block_usercp --></div>
+	<div class="right">
+		<div class="pfw mbottom10">
+			<h3>修改个人资料</h3>
+			<form method="post" id="userinfo_submit">
+			<div class="table">
+				<input type="hidden" name="avatar" id="avatar" value="{$rs.avatar}" />
+				<div class="l" style="line-height:80px;">会员头像：</div>
+				<img src="{$rs.avatar ? $rs.avatar : 'images/avatar_huge.gif'}" width="80px" border="0" />
+			</div>
+			<div class="table">
+				<div class="l"><span class="red">*</span> 邮箱：</div>
+				<input type="text" name="email" id="email" value="{$rs.email}" class="input" />
+			</div>
+			<div class="table">
+				<div class="l">手机或电话：</div>
+				<input type="text" name="mobile" id="mobile" value="{$rs.mobile}" class="input" />
+			</div>
+			<!-- loop from=$extlist key=$key value=$value -->
+			<div class="table">
+				<div class="l">{$value.title}：</div>
+				{$value.html}
+			</div>
+			<!-- /loop -->
+			<div class="table">
+				<div class="l">&nbsp;</div>
+				<input type="submit" value=" 修改资料 " />
+			</div>
+			</form>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!-- include tpl=foot -->

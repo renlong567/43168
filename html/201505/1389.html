@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-control" content="no-cache,no-store,must-revalidate,max-age=3" />
+	<meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT" />
+	<meta name="renderer" content="webkit">
+	<meta name="author" content="phpok,admin@phpok.com" />
+	<meta name="license" content="LGPL" />
+	<meta name="keywords" content="网站建设,企业网站建设,PHPOK网站建设,PHPOK企业网站建设" />
+	<meta name="description" content="高效的企业网站建设系统，可实现高定制化的企业网站电商系统，实现企业网站到电子商务企业网站。定制功能更高，操作更简单！" />
+	<title>清水岩，内奉中国百仙之一清水祖师 - 风景旅游 - 图集相册 - 网站建设|企业网站建设|PHPOK网站建设|PHPOK企业网站建设 - PHPOK企业网站</title>
+	<base href="http://phpok:81/" />
+	<script type="text/javascript" src="http://phpok:81/index.php?c=js&ext=jquery.artdialog.js" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="http://phpok:81/tpl/www/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="http://phpok:81/css/artdialog.css" />
+	<script type="text/javascript" src="http://phpok:81/tpl/www/js/global.js" charset="UTF-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$.cart.total();
+		$.phpok.json(api_url('login','status'),function(data){
+			if(data.status == 'ok'){
+				var logout = "javascript:$.user.logout('"+data.content.user_name+"');void(0)";
+				var html = ' | <a href="http://phpok:81/index.php?c=usercp">个人中心</a> | <a href="'+logout+'">退出</a>';
+			}else{
+				var html = ' | <a href="http://phpok:81/index.php?c=login">登录</a> | <a href="http://phpok:81/index.php?c=register">注册</a>';
+			}
+			$("#top_html_user_login").html(html);
+		});
+	});
+	</script>
+</head>
+<body>
+
+<div class="head">
+	<div class="logo"><a href="http://phpok:81/" title="PHPOK企业网站"><img src="res/201409/01/27a6e141c3d265ae.jpg" alt="PHPOK企业网站" /></a></div>
+	<div class="head_right">
+		<div class="top_nav">
+			<a href="http://phpok:81/index.php?c=cart" title="购物车">购物车 <span class="red">(<span id="head_cart_num">0</span>)</span></a>
+			<span id="top_html_user_login"></span>
+		</div>
+		<div class="search">
+			<form method="post" action="http://phpok:81/index.php?c=search" onsubmit="return top_search();">
+			<input name="keywords" value="" id="top-keywords" type="text" class="search_input" placeholder="请输入关键字" />
+			<input name="" type="submit" class="search_btn" value="" />
+			</form>
+		</div>
+	</div>
+	<div class="cl"></div>
+	<div class="nav">
+	<ul>
+						<li>
+			<a class="first" href="index.php" title="网站首页" target="_self">网站首页</a>
+					</li>
+				<li>
+			<a href="index.php?id=about-us" title="关于我们" target="_self">关于我们</a>
+						<ul>
+								<li><a href="index.php?id=contact-us" title="联系我们" target="_self">联系我们</a></li>
+								<li><a href="index.php?id=work" title="工作环境" target="_self">工作环境</a></li>
+								<li><a href="index.php?id=development-course" title="发展历程" target="_self">发展历程</a></li>
+							</ul>
+					</li>
+				<li>
+			<a href="index.php?id=news" title="资讯中心" target="_self">资讯中心</a>
+						<ul>
+								<li><a href="index.php?id=news&cate=company" title="公司新闻" target="_self">公司新闻</a></li>
+								<li><a href="index.php?id=news&cate=industry" title="行业新闻" target="_self">行业新闻</a></li>
+							</ul>
+					</li>
+				<li>
+			<a href="index.php?id=product" title="产品展示" target="_self">产品展示</a>
+					</li>
+				<li>
+			<a href="index.php?id=book" title="在线留言" target="_self">在线留言</a>
+					</li>
+				<li class="current">
+			<a href="index.php?id=photo" title="图集相册" target="_self">图集相册</a>
+					</li>
+				<li>
+			<a href="index.php?id=download-center" title="下载中心" target="_self">下载中心</a>
+					</li>
+				<li>
+			<a class="last" href="index.php?id=bbs" title="论坛BBS" target="_self">论坛BBS</a>
+					</li>
+			</ul>
+	</div>
+</div>
+<div class="wrap mb10">
+	<div class="page_left">
+		<dl class="sub_nav">
+	<dt>图集相册</dt>
+			<dd class="on"><a href="http://phpok:81/html/photo/fengjinglvyou.html" title="风景旅游">风景旅游</a></dd>
+	</dl>		<dl class="page_contact">
+	<dt>联系我们</dt>
+	<dd>
+		<b>深圳市锟铻科技有限公司</b>		<div>地址：广东深圳市罗湖区东盛路辐照中心7栋3楼</div>		<div>Email：admin@domain.com</div>		<div>邮编：518000</div>		<div>电话：158185XXXXX</div>		<div>联系人：XXX</div>	</dd>
+</dl>    </div>
+	<div class="page_right">
+		<div class="page_right_title">
+			<span class="breadcrumbs">
+				您现在的位置：
+				<a href="http://phpok:81/" title="PHPOK企业网站">首页</a>
+				<span class="arrow">&nbsp;</span> <a href="http://phpok:81/html/photo.html" title="图集相册">图集相册</a>
+												<span class="arrow">&nbsp;</span> <a href="http://phpok:81/html/photo/fengjinglvyou.html" title="风景旅游">风景旅游</a>
+							</span>
+			风景旅游		</div>
+		<div class="photo">
+			<h1>清水岩，内奉中国百仙之一清水祖师</h1>
+			<div class="date-hits">
+				发布日期：<span>2015年05月02日</span>&nbsp;&nbsp;&nbsp;
+				浏览次数：<span id="lblVisits">8</span>
+			</div>
+						<div class="picplayerlist">
+			<ul class="pictures">
+								<li>
+					<div class="img"><a href="res/pictures/201505/02/auto_876.jpg" target="_blank"><img src="images/blank.gif" _src="res/pictures/201505/02/photo_876.jpg" border="0" alt="清水岩01" /></a></div>
+									</li>
+							</ul>
+			<div class="pn">
+				<a href="javascript:void(0);" class="prev">上一张</a> (点击图片在新窗口查看原图) <a href="javascript:void(0);" class="next">下一张</a>
+			</div>
+			</div>
+			<script type="text/javascript">
+			$(document).ready(function(){
+				jQuery(".picplayerlist").slide({'mainCell':"ul.pictures",'effect':"left",'switchLoad':'_src'});
+			});
+			</script>
+						<div class="d_txt"><p>水岩位于世界名茶铁观音的故乡——福建安溪城关西北16公里处的蓬莱山。景区总面积11.1平方公里，主峰海拔763米，是一处以清水岩寺为主体，以清水祖师文化为特色，融宗教朝圣、生态旅游、民俗展示、休闲度假为一体的风景名胜区。现为国家AAAA级旅游区、全国重点文物保护单位、全国首批涉台文物保护工程之一、福建省级风景名胜区，“清水祖师信俗”被列为国家级非物质文化，清水岩及“帝”字形商标被评为“福建省著名商标”。</p><p>清水岩庙宇依山而筑，下临深壑，为三层楼阁式。一层昊天口，二层祖师殿，三层释迦楼。三层两边各有檀樾厅、观音厅、芳名厅。殿后有宋建清水祖师骨灰“真空塔”，上有新筑三重檐方亭。殿宇红砖墙、青灰瓦，危楼重阁，隐在青松翠竹、烟岚缭绕的山顶，典雅壮观。</p><p>岩宇附近有各具特色的景致：“狮喉”、“清珠帘”、“方鉴圹”、“枝枝朝北”、“罗汉松”、“觉亭”、“石栗柜”、“岩图碑刻”、“三忠庙”等。“清珠帘”，“一泓清水流千古，四望苍山垒万重”；“枝枝朝北”为古樟树，相传为感岳飞蒙难而枝杈北向；“岩图碑刻”系浮雕清水岩石全景碑了这株樟两岸信仰的清水祖师。</p></div>
+			
+			<div class="prev-next">
+				<p>上一主题：
+															<a href="http://phpok:81/html/201505/1388.html" title="永春牛姆林，被誉为闽南西双版纳的生态旅游区">永春牛姆林，被誉为闽南西双版纳的生态旅游区</a>
+									</p>
+				<p>下一主题：
+															没有了
+									</p>
+			</div>
+		</div>
+			</div>
+	<div class="cl"></div>
+</div>
+
+<div class="foot">
+	<div class="copyright">
+						<a href="index.php?id=about-us" title="公司简介" target="_self">公司简介</a>
+		 | 				<a href="index.php?id=development-course" title="发展历程" target="_self">发展历程</a>
+		 | 				<a href="index.php?id=news" title="新闻中心" target="_self">新闻中心</a>
+		 | 				<a href="index.php?id=book" title="在线留言" target="_self">在线留言</a>
+		 | 				<a href="index.php?id=contact-us" title="联系我们" target="_self">联系我们</a>
+		<br />				Powered By phpok.com 版权所有 © 2004-2014, All right reserved.		<div class="debug">运行0.06993秒，内存使用1.84 MB，数据库执行11次，耗时0.00547秒，缓存执行46次，耗时0.01998秒</div>
+	</div>
+</div>
+</body>
+</html>

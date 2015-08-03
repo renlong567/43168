@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-control" content="no-cache,no-store,must-revalidate,max-age=3" />
+	<meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT" />
+	<meta name="renderer" content="webkit">
+	<meta name="author" content="phpok,admin@phpok.com" />
+	<meta name="license" content="LGPL" />
+	<meta name="keywords" content="网站建设,企业网站建设,PHPOK网站建设,PHPOK企业网站建设" />
+	<meta name="description" content="高效的企业网站建设系统，可实现高定制化的企业网站电商系统，实现企业网站到电子商务企业网站。定制功能更高，操作更简单！" />
+	<title>网站建设|企业网站建设|PHPOK网站建设|PHPOK企业网站建设 - PHPOK企业网站</title>
+	<base href="http://phpok:81/" />
+	<script type="text/javascript" src="http://phpok:81/index.php?c=js&ext=jquery.artdialog.js" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="http://phpok:81/tpl/www/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="http://phpok:81/css/artdialog.css" />
+	<script type="text/javascript" src="http://phpok:81/tpl/www/js/global.js" charset="UTF-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$.cart.total();
+		$.phpok.json(api_url('login','status'),function(data){
+			if(data.status == 'ok'){
+				var logout = "javascript:$.user.logout('"+data.content.user_name+"');void(0)";
+				var html = ' | <a href="http://phpok:81/index.php?c=usercp">个人中心</a> | <a href="'+logout+'">退出</a>';
+			}else{
+				var html = ' | <a href="http://phpok:81/index.php?c=login">登录</a> | <a href="http://phpok:81/index.php?c=register">注册</a>';
+			}
+			$("#top_html_user_login").html(html);
+		});
+	});
+	</script>
+</head>
+<body>
+
+<div class="head">
+	<div class="logo"><a href="http://phpok:81/" title="PHPOK企业网站"><img src="res/201409/01/27a6e141c3d265ae.jpg" alt="PHPOK企业网站" /></a></div>
+	<div class="head_right">
+		<div class="top_nav">
+			<a href="http://phpok:81/index.php?c=cart" title="购物车">购物车 <span class="red">(<span id="head_cart_num">0</span>)</span></a>
+			<span id="top_html_user_login"></span>
+		</div>
+		<div class="search">
+			<form method="post" action="http://phpok:81/index.php?c=search" onsubmit="return top_search();">
+			<input name="keywords" value="" id="top-keywords" type="text" class="search_input" placeholder="请输入关键字" />
+			<input name="" type="submit" class="search_btn" value="" />
+			</form>
+		</div>
+	</div>
+	<div class="cl"></div>
+	<div class="nav">
+	<ul>
+						<li class="current">
+			<a class="first" href="index.php" title="网站首页" target="_self">网站首页</a>
+					</li>
+				<li>
+			<a href="index.php?id=about-us" title="关于我们" target="_self">关于我们</a>
+						<ul>
+								<li><a href="index.php?id=contact-us" title="联系我们" target="_self">联系我们</a></li>
+								<li><a href="index.php?id=work" title="工作环境" target="_self">工作环境</a></li>
+								<li><a href="index.php?id=development-course" title="发展历程" target="_self">发展历程</a></li>
+							</ul>
+					</li>
+				<li>
+			<a href="index.php?id=news" title="资讯中心" target="_self">资讯中心</a>
+						<ul>
+								<li><a href="index.php?id=news&cate=company" title="公司新闻" target="_self">公司新闻</a></li>
+								<li><a href="index.php?id=news&cate=industry" title="行业新闻" target="_self">行业新闻</a></li>
+							</ul>
+					</li>
+				<li>
+			<a href="index.php?id=product" title="产品展示" target="_self">产品展示</a>
+					</li>
+				<li>
+			<a href="index.php?id=book" title="在线留言" target="_self">在线留言</a>
+					</li>
+				<li>
+			<a href="index.php?id=photo" title="图集相册" target="_self">图集相册</a>
+					</li>
+				<li>
+			<a href="index.php?id=download-center" title="下载中心" target="_self">下载中心</a>
+					</li>
+				<li>
+			<a class="last" href="index.php?id=bbs" title="论坛BBS" target="_self">论坛BBS</a>
+					</li>
+			</ul>
+	</div>
+</div><div class="home_banner">
+		<ul class="pro_ul">
+				<li><a href="http://www.phpok.com" target="_blank" title="开源精神，开创未来"><img src="res/picplayer/b13b0cfacb8567c2.jpg" width="980" alt="开源精神，开创未来" /></a></li>
+				<li><a href="http://www.phpok.com" target="_blank" title="选择PHPOK，企业更专业"><img src="res/picplayer/21a7421bf229f2ff.jpg" width="980" alt="选择PHPOK，企业更专业" /></a></li>
+				<li><a href="http://www.phpok.com" target="_blank" title="企业建站，我信赖PHPOK"><img src="res/picplayer/51d03925fffb2e14.jpg" width="980" alt="企业建站，我信赖PHPOK" /></a></li>
+			</ul>
+	<ul class="page_ul">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".home_banner").slide({
+		'titCell':'.page_ul li',
+		'mainCell':'.pro_ul',
+		'autoPlay':true
+	});
+});
+</script>
+<div class="wrap">
+	<div class="home_left">
+				<div class="m_box">
+			<div class="m_t">
+				<p class="name">资讯中心</p>
+				<span class="name_en">News</span>
+				<a href="http://phpok:81/html/news.html" class="more" title="阅读更多资讯中心">更多</a>
+				<div class="cl"></div>
+			</div>
+			<ul class="home_news">
+								<li><a href="http://phpok:81/html/201507/1396.html" title="测试添加视频">测试添加视频</a> <img src="tpl/www/images/new.gif" /></li>
+								<li><a href="http://phpok:81/html/201506/1382.html" title="站点采用HTTPS协议的利弊分析、及SEO建议">站点采用HTTPS协议的利弊分析、及SEO…</a></li>
+								<li><a href="http://phpok:81/html/201504/1381.html" title="科技进步给工人带来失业恐惧？">科技进步给工人带来失业恐惧？</a></li>
+								<li><a href="http://phpok:81/html/201502/1373.html" title="来自工程师的8项Web性能提升建议">来自工程师的8项Web性能提升建议</a></li>
+								<li><a href="http://phpok:81/html/201502/1372.html" title="FTP软件使用中的PASV和PORT上传模式">FTP软件使用中的PASV和PORT上传模式…</a></li>
+								<li><a href="http://phpok:81/html/201502/1371.html" title="MySQL安装后需要调整什么?">MySQL安装后需要调整什么?</a></li>
+								<li><a href="http://phpok:81/html/201502/1370.html" title="MySQL出错代码">MySQL出错代码</a></li>
+								<li><a href="http://phpok:81/html/201502/1369.html" title="金山 WPS - 免费正版办公软件(支持Win/Linux/手机)">金山 WPS - 免费正版办公软件(支持Wi…</a></li>
+							</ul>
+		</div>
+
+				<div class="m_box">
+			<div class="m_t">
+				<p class="name">产品分类</p>
+				<span class="name_en">Categories</span>
+				<a href="http://phpok:81/html/product.html" class="more">more</a>
+				<div class="cl"></div>
+			</div>
+						<dl class="sort">
+				<dt><a href="http://phpok:81/html/product/clothing-accessories.html">服装、配饰</a></dt>
+				<dd>
+										<a href="http://phpok:81/html/product/shirt.html">衬衫</a>
+										<a href="http://phpok:81/html/product/polo-shirt.html">polo衫</a>
+										<a href="http://phpok:81/html/product/xianglian.html">项链</a>
+										<a href="http://phpok:81/html/product/chaopai.html">潮牌</a>
+									</dd>
+			</dl>
+						<dl class="sort">
+				<dt><a href="http://phpok:81/html/product/other-products.html">其他产品</a></dt>
+				<dd>
+										<a href="http://phpok:81/html/product/digital-newsletter.html">数码通迅</a>
+										<a href="http://phpok:81/html/product/computer-office.html">电脑、办公</a>
+									</dd>
+			</dl>
+					 </div>
+		
+		<div class="m_box">
+			<div class="m_t">
+				<p class="name">最新下载</p>
+				<span class="name_en">Downloads</span>
+				<a href="http://phpok:81/html/download-center.html" class="more">more</a>
+				<div class="cl"></div>
+			</div>
+			<ul class="home_news">
+											</ul>
+		</div>
+		<div class="m_box">
+			<div class="m_t">
+				<p class="name">联系我们</p>
+				<span class="name_en">Contact</span>
+				<div class="cl"></div>
+			</div>
+			<div class="home_contact">
+				<h3>深圳市锟铻科技有限公司</h3>				<div>地址：广东深圳市罗湖区东盛路辐照中心7栋3楼</div>				<div>Email：admin@domain.com</div>				<div>邮编：518000</div>				<div>电话：158185XXXXX</div>				<div>联系人：XXX</div>			</div>
+		</div>
+	</div>
+	
+	
+	<div class="home_right">
+				<div class="m_box">
+			<div class="m_t">
+				<p class="name">公司简介</p>
+				<span class="name_en">Intro</span>
+								<a href="index.php?id=about-us" class="more">更多</a>
+								<div class="cl"></div>
+			</div>
+			<div class="home_about">
+				<img src="res/201411/06/a50b479341925654.jpg" width="129" height="133" />
+				<p><p style="text-indent: 2em; text-align: left;">PHPOK企业程序（简称程序）是锟铻科技有限公司（前身为情感工作室）开发的一套实用性强，定制灵活的企业网站建设系统，基于PHP+MySQL架构，可运行于Linux、Windows、MacOSX、Solaris等各种平台上。</p><p style="text-indent: 2em; text-align: left;">程序采用MVC模式开发，支持各种自定义：分类，项目，模块，站点信息等等，您甚至可以基于这些自定义选项来编写相应的插件以实现各个项目的勾连。</p><p style="text-indent: 2em; text-align: left;">程序最新版本已内置了这些常用的项目：单页面（适用于公司简介），新闻资讯，下载中心，图片展示，在线商城，留言本，迷你小论坛及基础会员功能。您随时可以在后台禁用这些项目甚至是删除之。简约，实用，够用，好用，是我们一直都在努力追求的目标。</p></p>
+			</div>
+		</div>
+			  
+		<div class="box" id="photoslist">
+						<h2 class="title">
+				图集相册<span class="en">Photos</span>				<div class="pn">
+					<span class="prev"></span>
+					<span class="next"></span>
+				</div>
+			</h2>
+			<ul class="imglist">
+								<li>
+					<a href="http://phpok:81/html/201505/1389.html" title="清水岩，内奉中国百仙之一清水祖师"><img src="res/thumb/201505/02/thumb_875.jpg" alt="清水岩，内奉中国百仙之一清水祖师" /></a>
+					<div class="tit"><a href="http://phpok:81/html/201505/1389.html" title="清水岩，内奉中国百仙之一清水祖师">清水岩，内奉中国百仙之一清水祖…</a></div>
+				</li>
+								<li>
+					<a href="http://phpok:81/html/201505/1388.html" title="永春牛姆林，被誉为闽南西双版纳的生态旅游区"><img src="res/thumb/201505/02/thumb_868.jpg" alt="永春牛姆林，被誉为闽南西双版纳的生态旅游区" /></a>
+					<div class="tit"><a href="http://phpok:81/html/201505/1388.html" title="永春牛姆林，被誉为闽南西双版纳的生态旅游区">永春牛姆林，被誉为闽南西双版纳…</a></div>
+				</li>
+								<li>
+					<a href="http://phpok:81/html/201505/1387.html" title="老君岩，我国现存最大的道教石雕"><img src="res/thumb/201505/02/thumb_861.jpg" alt="老君岩，我国现存最大的道教石雕" /></a>
+					<div class="tit"><a href="http://phpok:81/html/201505/1387.html" title="老君岩，我国现存最大的道教石雕">老君岩，我国现存最大的道教石雕</a></div>
+				</li>
+								<li>
+					<a href="http://phpok:81/html/201505/1386.html" title="开元寺，泉州古城的独特标志和象征"><img src="res/thumb/201505/02/thumb_830.jpg" alt="开元寺，泉州古城的独特标志和象征" /></a>
+					<div class="tit"><a href="http://phpok:81/html/201505/1386.html" title="开元寺，泉州古城的独特标志和象征">开元寺，泉州古城的独特标志和象…</a></div>
+				</li>
+							</ul>
+		</div>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$("#photoslist").slide({
+				'mainCell':'ul.imglist',
+				'effect':"leftLoop",
+				'autoPlay':true,
+				'vis':3
+			});
+		});
+		</script>
+
+		<div class="atlas">
+			<div class="atlas_t">
+				<p class="name">最新产品</p><span class="name_en">New products</span>
+				<div class="tabs"><a href="http://phpok:81/html/product.html" class="more">MORE</a></div>
+			</div>
+			<ul class="home_list">
+												<li>
+			 		<p class="img159px"><a href="http://phpok:81/html/201409/1306.html" title="施华洛世奇（Swarovski） 浅粉蓝色雨滴项链"><img src="res/201409/11/thumb_636.jpg" width="159" height="183" alt="施华洛世奇（Swarovski） 浅粉蓝色雨滴项链" /></a></p>
+					<p class="l_name">施华洛世奇（Swarovski） 浅粉蓝色雨滴项链</p>
+					<p class="l_price">价格：<span>￥ 799.00 </span></p>
+					<p><a href="javascript:$.cart.add('1306',1);void(0);"><img src="tpl/www/images/buy-btn.jpg" width="157" height="33" /></a></p>
+				</li>
+								<li>
+			 		<p class="img159px"><a href="http://phpok:81/html/201402/1253.html" title="新款男人时尚长袖格子衬衫"><img src="res/201409/11/thumb_631.jpg" width="159" height="183" alt="新款男人时尚长袖格子衬衫" /></a></p>
+					<p class="l_name">新款男人时尚长袖格子衬衫</p>
+					<p class="l_price">价格：<span>￥ 158.00 </span></p>
+					<p><a href="javascript:$.cart.add('1253',1);void(0);"><img src="tpl/www/images/buy-btn.jpg" width="157" height="33" /></a></p>
+				</li>
+							</ul>
+		</div>
+		<div class="h_news">
+									<div class="plate">
+				<div class="plate_title">
+					<span class="ch_name">公司新闻</span>
+					<a href="http://phpok:81/html/news/company.html" class="plate_more">更多</a>
+				</div>
+				<dl class="plate_main">
+															<dd><span>2015-02</span><a href="http://phpok:81/html/201502/1370.html">MySQL出错代码</a></dd>
+										<dd><span>2015-02</span><a href="http://phpok:81/html/201502/1369.html">金山 WPS - 免费正版办公软件(支持Win/Linux/手机)</a></dd>
+										<dd><span>2015-02</span><a href="http://phpok:81/html/201502/1368.html">EverEdit - 值得关注的代码编辑器</a></dd>
+									</dl>
+			</div>
+									<div class="plate">
+				<div class="plate_title">
+					<span class="ch_name">行业新闻</span>
+					<a href="http://phpok:81/html/news/industry.html" class="plate_more">更多</a>
+				</div>
+				<dl class="plate_main">
+															<dd><span>2015-07</span><a href="http://phpok:81/html/201507/1396.html">测试添加视频</a></dd>
+										<dd><span>2015-06</span><a href="http://phpok:81/html/201506/1382.html">站点采用HTTPS协议的利弊分析、及SEO建议</a></dd>
+										<dd><span>2015-04</span><a href="http://phpok:81/html/201504/1381.html">科技进步给工人带来失业恐惧？</a></dd>
+										<dd><span>2015-02</span><a href="http://phpok:81/html/201502/1373.html">来自工程师的8项Web性能提升建议</a></dd>
+									</dl>
+			</div>
+			<div class="clear"></div>						<div class="plate">
+				<div class="plate_title">
+					<span class="ch_name">常见问题</span>
+					<a href="http://phpok:81/html/news/faq.html" class="plate_more">更多</a>
+				</div>
+				<dl class="plate_main">
+															<dd><span>2015-02</span><a href="http://phpok:81/html/201502/1372.html">FTP软件使用中的PASV和PORT上传模式</a></dd>
+										<dd><span>2015-02</span><a href="http://phpok:81/html/201502/1371.html">MySQL安装后需要调整什么?</a></dd>
+										<dd><span>2015-02</span><a href="http://phpok:81/html/201502/1370.html">MySQL出错代码</a></dd>
+									</dl>
+			</div>
+								</div>
+	</div>
+	<div class="cl"></div>
+</div>
+
+<div class="cooper">
+		<div class="cooper_t">
+		<p class="name">友情链接</p><span class="name_en">Links</span>
+		<a href="http://phpok:81/index.php?c=post&id=link" class="more">+ 申请友情链接</a>
+		<div class="cl"></div>
+	</div>
+	<div class="home_link">
+				<a href="http://www.mycodes.net/" target="_blank" title="源码之家">源码之家</a>
+				<a href="http://www.im286.com/" target="_blank" title="落伍者">落伍者</a>
+				<a href="http://www.cnzz.cn/" target="_blank" title="中国站长">中国站长</a>
+				<a href="http://www.admin5.com/" target="_blank" title="A5站长网">A5站长网</a>
+				<a href="http://www.chinaz.com/" target="_blank" title="中国站长站">中国站长站</a>
+				<a href="http://www.7139.com" target="_blank" title="梦幻网络">梦幻网络</a>
+				<a href="http://www.17tengfei.com/" target="_blank" title="联迅网络">联迅网络</a>
+				<a href="http://www.sz-qibang.com/" target="_blank" title="启邦互动">启邦互动</a>
+				<a href="http://www.phpok.com" target="_blank" title="phpok官网">phpok官网</a>
+			</div>
+</div>
+<div class="foot">
+	<div class="copyright">
+						<a href="index.php?id=about-us" title="公司简介" target="_self">公司简介</a>
+		 | 				<a href="index.php?id=development-course" title="发展历程" target="_self">发展历程</a>
+		 | 				<a href="index.php?id=news" title="新闻中心" target="_self">新闻中心</a>
+		 | 				<a href="index.php?id=book" title="在线留言" target="_self">在线留言</a>
+		 | 				<a href="index.php?id=contact-us" title="联系我们" target="_self">联系我们</a>
+		<br />				Powered By phpok.com 版权所有 © 2004-2014, All right reserved.		<div class="debug">运行0.58771秒，内存使用2.02 MB，数据库执行113次，耗时0.07775秒，缓存执行395次，耗时0.3664秒</div>
+	</div>
+</div>
+</body>
+</html>

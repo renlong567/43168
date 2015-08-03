@@ -1,0 +1,26 @@
+		<br />
+		<!-- plugin body -->
+	</div>
+	<div class="clear"></div>
+</div>
+<div class="foot" style="text-align:center;">{func debug_time 1 1 1 1}</div>
+<!-- plugin foot -->
+<script type="text/javascript">
+$(document).ready(function(){
+	$(document).keydown(function(e){
+		var target = e.target;
+		var tag = e.target.tagName.toUpperCase();
+		if ((tag == 'INPUT' && !$(target).attr("readonly")) || (tag == 'TEXTAREA' && !$(target).attr("readonly"))) {
+			if ((target.type.toUpperCase() == "RADIO") || (target.type.toUpperCase() == "CHECKBOX")) {
+				return false;
+			} else {
+				return true;
+			}
+		} else {
+			return false;
+		}
+	});
+});
+</script>
+</body>
+</html>

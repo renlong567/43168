@@ -41,3 +41,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/nbproject/private/
+/data/cache/
+/data/tpl_admin/
+/data/tpl_html/
+/data/tpl_www/

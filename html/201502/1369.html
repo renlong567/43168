@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-control" content="no-cache,no-store,must-revalidate,max-age=3" />
+	<meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT" />
+	<meta name="renderer" content="webkit">
+	<meta name="author" content="phpok,admin@phpok.com" />
+	<meta name="license" content="LGPL" />
+	<meta name="keywords" content="网站建设,企业网站建设,PHPOK网站建设,PHPOK企业网站建设" />
+	<meta name="description" content="高效的企业网站建设系统，可实现高定制化的企业网站电商系统，实现企业网站到电子商务企业网站。定制功能更高，操作更简单！" />
+	<title>金山 WPS - 免费正版办公软件(支持Win/Linux/手机) - 行业新闻 - 资讯中心 - 网站建设|企业网站建设|PHPOK网站建设|PHPOK企业网站建设 - PHPOK企业网站</title>
+	<base href="http://phpok:81/" />
+	<script type="text/javascript" src="http://phpok:81/index.php?c=js&ext=jquery.artdialog.js" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="http://phpok:81/tpl/www/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="http://phpok:81/css/artdialog.css" />
+	<script type="text/javascript" src="http://phpok:81/tpl/www/js/global.js" charset="UTF-8"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$.cart.total();
+		$.phpok.json(api_url('login','status'),function(data){
+			if(data.status == 'ok'){
+				var logout = "javascript:$.user.logout('"+data.content.user_name+"');void(0)";
+				var html = ' | <a href="http://phpok:81/index.php?c=usercp">个人中心</a> | <a href="'+logout+'">退出</a>';
+			}else{
+				var html = ' | <a href="http://phpok:81/index.php?c=login">登录</a> | <a href="http://phpok:81/index.php?c=register">注册</a>';
+			}
+			$("#top_html_user_login").html(html);
+		});
+	});
+	</script>
+</head>
+<body>
+
+<div class="head">
+	<div class="logo"><a href="http://phpok:81/" title="PHPOK企业网站"><img src="res/201409/01/27a6e141c3d265ae.jpg" alt="PHPOK企业网站" /></a></div>
+	<div class="head_right">
+		<div class="top_nav">
+			<a href="http://phpok:81/index.php?c=cart" title="购物车">购物车 <span class="red">(<span id="head_cart_num">0</span>)</span></a>
+			<span id="top_html_user_login"></span>
+		</div>
+		<div class="search">
+			<form method="post" action="http://phpok:81/index.php?c=search" onsubmit="return top_search();">
+			<input name="keywords" value="" id="top-keywords" type="text" class="search_input" placeholder="请输入关键字" />
+			<input name="" type="submit" class="search_btn" value="" />
+			</form>
+		</div>
+	</div>
+	<div class="cl"></div>
+	<div class="nav">
+	<ul>
+						<li>
+			<a class="first" href="index.php" title="网站首页" target="_self">网站首页</a>
+					</li>
+				<li>
+			<a href="index.php?id=about-us" title="关于我们" target="_self">关于我们</a>
+						<ul>
+								<li><a href="index.php?id=contact-us" title="联系我们" target="_self">联系我们</a></li>
+								<li><a href="index.php?id=work" title="工作环境" target="_self">工作环境</a></li>
+								<li><a href="index.php?id=development-course" title="发展历程" target="_self">发展历程</a></li>
+							</ul>
+					</li>
+				<li class="current">
+			<a href="index.php?id=news" title="资讯中心" target="_self">资讯中心</a>
+						<ul>
+								<li><a href="index.php?id=news&cate=company" title="公司新闻" target="_self">公司新闻</a></li>
+								<li><a href="index.php?id=news&cate=industry" title="行业新闻" target="_self">行业新闻</a></li>
+							</ul>
+					</li>
+				<li>
+			<a href="index.php?id=product" title="产品展示" target="_self">产品展示</a>
+					</li>
+				<li>
+			<a href="index.php?id=book" title="在线留言" target="_self">在线留言</a>
+					</li>
+				<li>
+			<a href="index.php?id=photo" title="图集相册" target="_self">图集相册</a>
+					</li>
+				<li>
+			<a href="index.php?id=download-center" title="下载中心" target="_self">下载中心</a>
+					</li>
+				<li>
+			<a class="last" href="index.php?id=bbs" title="论坛BBS" target="_self">论坛BBS</a>
+					</li>
+			</ul>
+	</div>
+</div>
+<div class="wrap mb10">
+	<div class="page_left">
+		<dl class="sub_nav">
+	<dt>资讯中心</dt>
+			<dd><a href="http://phpok:81/html/news/company.html" title="公司新闻">公司新闻</a></dd>
+		<dd class="on"><a href="http://phpok:81/html/news/industry.html" title="行业新闻">行业新闻</a></dd>
+		<dd><a href="http://phpok:81/html/news/faq.html" title="常见问题">常见问题</a></dd>
+	</dl>		<dl class="page_contact">
+	<dt>联系我们</dt>
+	<dd>
+		<b>深圳市锟铻科技有限公司</b>		<div>地址：广东深圳市罗湖区东盛路辐照中心7栋3楼</div>		<div>Email：admin@domain.com</div>		<div>邮编：518000</div>		<div>电话：158185XXXXX</div>		<div>联系人：XXX</div>	</dd>
+</dl>	</div>
+	<div class="page_right">
+		<div class="page_right_title">
+			<span class="breadcrumbs">
+				您现在的位置：
+				<a href="http://phpok:81/" title="PHPOK企业网站">首页</a>
+				<span class="arrow">&nbsp;</span> <a href="http://phpok:81/html/news.html" title="资讯中心">资讯中心</a>
+								<span class="arrow">&nbsp;</span> <a href="http://phpok:81/html/news/industry.html" title="行业新闻">行业新闻</a>
+							</span>
+			行业新闻		</div>
+		<div class="news_detail">
+			<h2>金山 WPS - 免费正版办公软件(支持Win/Linux/手机)</h2>
+			<div class="news-extra-area">
+				发布日期：<span>2015年02月26日</span>&nbsp;&nbsp;&nbsp;
+				浏览次数：<span id="lblVisits">17</span>
+							</div>
+			<div class="d_txt"><p style="text-align: center;"><img src="res/201502/26/auto_725.jpg" alt="auto_725.jpg"/></p><p>一直以来办公软件市场份额都是被微软的 Office&nbsp;牢牢占据，但其价格较贵，国内大多都是用着盗版。其实国产免费的 WPS 已经完完全全可以和Office媲美，且完美兼容各种doc、docx、xls、xlsx、ppt等微软文档格式！</p><p>金山 WPS Office 作为优秀免费国产软件，一直在用户中口碑相当好！它完全免费，体积小巧，跨平台支持Win、Linux、Android 和 iOS，兼容微软包括最新的&nbsp;Office2013&nbsp;在内的各种文档格式，几乎可以完美替代收费的&nbsp;Office。另外&nbsp;WPS 新增了用于协同工作的「轻办公」，适合国情的大量在线模版、范文、素材库等也都让其更加适合国人使用……</p><p>WPS Office 全面采用了「扁平化」界面设计，看起来非常专业时尚！它包含3个主要组件：文字、表格和演示，分别对应微软 MS Office 的 Word、Excel和PowerPoint，并且针对国内用户的习惯，WPS提供更多适合国人使用的模版。在界面和操作使用上也很相似，如果你习惯了用Office，那么你几乎可以不用重新学习即可马上熟练使用WPS。</p><p>WPS Office 深度兼容 Microsoft Office 的文档格式，你可以直接保存和打开 Microsoft Word、Excel 和 PowerPoint 文件；也可以用 Microsoft Office轻松编辑 WPS 系列文档。经测试，微软新的 docx、xlsx等格式打开都非常正常，兼容接近完美。</p><p>目前金山 WPS 已经提供了包括 Windows、Linux、Android 和 iOS 等系统的版本，而且它们通过轻办公的云服务将用户文档完全打通，轻松实现随时随地的移动办公，相比目前市面上很多 Office 类的软件都要方便得多。</p><p>对于非重度办公的用户而言，金山WPS&nbsp;和&nbsp;微软Office&nbsp;在界面和使用上其实并没有很大的差别，由于WPS有着良好的兼容性，实测几乎所有文档均能正常打开，完全可以替代MS Office。具体 WPS 和 MS Office 的技术谁更先进其实我们并不需要了解，免费好用才是王道！免去什么激活啊，什么注册码的麻烦，直接安装就可以免费使用，随时升级，这省下多少心呢！</p><p>最后，感谢金山给国人带来如此优秀实用的一款免费正版办公软件！</p></div>
+			<div class="d_page">
+				<p>上一主题：
+															<a href="http://phpok:81/html/201502/1368.html" title="EverEdit - 值得关注的代码编辑器">EverEdit - 值得关注的代码编辑器</a>
+									</p>
+				<p>下一主题：
+															<a href="http://phpok:81/html/201507/1396.html" title="测试添加视频">测试添加视频</a>
+									</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+$(document).ready(function(){
+	$("#comment_post").submit(function(){
+		$(this).ajaxSubmit({
+			'url':api_url('comment','save','id=1369'),
+			'type':'post',
+			'dataType':'json',
+			'success':function(rs){
+				if(rs.status != 'ok')
+				{
+					alert(rs.content);
+					return false;
+				}
+				else
+				{
+					alert('您的评论已成功提交');
+					$.phpok.reload();
+					return true;
+				}
+			}
+		});
+		return false;
+	});
+});
+</script>
+<div class="comment">
+	<h4 class="title">评论：金山 WPS - 免费正版办公软件(支持Win/Linux/手机)</h4>
+					<dl>
+		<dt><img src="tpl/www/images/avatar_huge.gif" alt="游客" /></dt>
+		<dd>
+			<div class="Remarks">
+				<span class="icon icon-left-arrow"></span>
+				<div class="not_popedom">
+					您没有评论权限，请先
+					<a href="javascript:$.user.login('会员登录');void(0);" title="登录">登录</a> 或 
+					<a href="http://phpok:81/index.php?c=register&_back=http%3A%2F%2Fphpok%3A81%2Findex.php%3Fid%3D1369" title="注册">注册</a>
+				</div>
+			</div>
+		</dd>
+	</dl>
+	</div>
+	</div>
+	<div class="cl"></div>
+</div>
+<div class="foot">
+	<div class="copyright">
+						<a href="index.php?id=about-us" title="公司简介" target="_self">公司简介</a>
+		 | 				<a href="index.php?id=development-course" title="发展历程" target="_self">发展历程</a>
+		 | 				<a href="index.php?id=news" title="新闻中心" target="_self">新闻中心</a>
+		 | 				<a href="index.php?id=book" title="在线留言" target="_self">在线留言</a>
+		 | 				<a href="index.php?id=contact-us" title="联系我们" target="_self">联系我们</a>
+		<br />				Powered By phpok.com 版权所有 © 2004-2014, All right reserved.		<div class="debug">运行0.10008秒，内存使用1.87 MB，数据库执行12次，耗时0.00614秒，缓存执行46次，耗时0.03247秒</div>
+	</div>
+</div>
+</body>
+</html>
