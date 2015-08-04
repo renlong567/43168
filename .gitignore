@@ -42,7 +42,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 /nbproject/private/
-/data/cache/
-/data/tpl_admin/
-/data/tpl_html/
-/data/tpl_www/
+data/cache/*
+data/tpl_admin/*
+data/tpl_www/*
+data/tpl_html/*
