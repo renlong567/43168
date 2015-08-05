@@ -1,3 +1,4 @@
+</div>
 <div class="foot">
 	<div class="copyright">
 		<!-- php:$list = phpok('footnav') -->
@@ -6,7 +7,6 @@
 		<!-- if $list_id.num == $list_id.total --><br /><!-- else --> | <!-- /if -->
 		<!-- /loop -->
 		{$config.copyright.content}
-		<div class="debug">{func debug_time 1 1 1 1}</div>
 	</div>
 </div>
 <!-- php:$list = phpok('kefu') -->
@@ -17,7 +17,7 @@
 		<div class="addlist">
 			<ul>
 				<!-- loop from=$list.rslist key=$key value=$value -->
-				<li>{$value.title}<br /><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={$value.qq}&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:{$value.qq}:51" alt="µã»÷ÕâÀï¸øÎÒ·¢ÏûÏ¢" title="µã»÷ÕâÀï¸øÎÒ·¢ÏûÏ¢"/></a></li>
+				<li>{$value.title}<br /><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={$value.qq}&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:{$value.qq}:51" alt="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò·ï¿½ï¿½ï¿½Ï¢" title="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò·ï¿½ï¿½ï¿½Ï¢"/></a></li>
 				<!-- /loop -->
 				<!-- if $list.project.barcode -->
 				<li><img src="{$list.project.barcode.filename}" width="80px" alt="{$list.project.title}" /></li>

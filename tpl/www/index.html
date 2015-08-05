@@ -45,154 +45,113 @@
             });
         });
     </script>
-    <!-- php:$list = phpok('products_cate') -->
-    <div class="m_box">
-        <div class="m_t">
-            <p class="name">产品分类</p>
-            <span class="name_en">Categories</span>
-            <a href="{$list.project.url}" class="more">more</a>
-            <div class="cl"></div>
-        </div>
-        <!-- loop from=$list.tree key=$key value=$value -->
-        <dl class="sort">
-            <dt><a href="{$value.url}">{$value.title}</a></dt>
-            <dd>
-                <!-- loop from=$value.sublist key=$k value=$v -->
-                <a href="{$v.url}">{$v.title}</a>
-                <!-- /loop -->
-            </dd>
-        </dl>
-        <!-- /loop -->
-    </div>
-
-    <div class="m_box">
-        <div class="m_t">
-            <p class="name">最新下载</p>
-            <span class="name_en">Downloads</span>
-            <a href="{url id=download-center/}" class="more">more</a>
-            <div class="cl"></div>
-        </div>
-        <ul class="home_news">
-            <!-- php:$list = phpok('xiazaizhongxin') -->
-            <!-- loop from=$list.rslist key=$key value=$value -->
-            <li><a href="{$value.url}" title="{$value.title}">{$value.title}</a></li>
-            <!-- /loop -->
-        </ul>
-    </div>
-    <div class="m_box">
-        <div class="m_t">
-            <p class="name">联系我们</p>
-            <span class="name_en">Contact</span>
-            <div class="cl"></div>
-        </div>
-        <div class="home_contact">
-            <!-- if $config.contactus.company --><h3>{$config.contactus.company}</h3><!-- /if -->
-            <!-- if $config.contactus.address --><div>地址：{$config.contactus.address}</div><!-- /if -->
-            <!-- if $config.contactus.email --><div>Email：{$config.contactus.email}</div><!-- /if -->
-            <!-- if $config.contactus.zipcode --><div>邮编：{$config.contactus.zipcode}</div><!-- /if -->
-            <!-- if $config.contactus.tel --><div>电话：{$config.contactus.tel}</div><!-- /if -->
-            <!-- if $config.contactus.fullname --><div>联系人：{$config.contactus.fullname}</div><!-- /if -->
-        </div>
-    </div>
-</div>
-
-
-<div class="home_right">
-    <!-- if $page_rs -->
-    <div class="m_box">
-        <div class="m_t">
-            <p class="name">{$page_rs.subtitle}</p>
-            <span class="name_en">{$page_rs.entitle}</span>
-            <!-- if $page_rs.url && $page_rs.link -->
-            <a href="{$page_rs.url}" class="more">更多</a>
-            <!-- /if -->
-            <div class="cl"></div>
-        </div>
-        <div class="home_about">
-            <img src="{$page_rs.pic}" width="129" height="133" />
-            <p>{$page_rs.note}</p>
-        </div>
-    </div>
-    <!-- /if -->
-
-    <div class="box" id="photoslist">
-        <!-- php:$list = phpok('tujixiangce','fields=thumb') -->
-        <h2 class="title">
-            {$list.project.title}<!-- if $list.project.entitle --><span class="en">{$list.project.entitle}</span><!-- /if -->
-            <div class="pn">
-                <span class="prev"></span>
-                <span class="next"></span>
-            </div>
+    <!-- php:$list = phpok('news') -->
+    <div class="w1240">
+        <h2 class="tit">
+            <b style="font-size: 22px; color: #373631">{$list.project.title}</b>
+            <span class="n" style="color: #002147">/{$list.project.entitle}</span>
+            <a class="more fr n f12" href="{$list.project.url}">More+</a>
         </h2>
-        <ul class="imglist">
-            <!-- loop from=$list.rslist key=$key value=$value -->
-            <li>
-                <a href="{$value.url}" title="{$value.title}"><img src="{$value.thumb.gd.thumb}" alt="{$value.title}" /></a>
-                <div class="tit"><a href="{$value.url}" title="{$value.title}">{func phpok_cut $value.title 15 …}</a></div>
-            </li>
-            <!-- /loop -->
-        </ul>
-    </div>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#photoslist").slide({
-                'mainCell': 'ul.imglist',
-                'effect': "leftLoop",
-                'autoPlay': true,
-                'vis': 3
-            });
-        });
-    </script>
-
-    <div class="atlas">
-        <div class="atlas_t">
-            <p class="name">最新产品</p><span class="name_en">New products</span>
-            <div class="tabs"><a href="{url id=product/}" class="more">MORE</a></div>
-        </div>
-        <ul class="home_list">
-            <!-- php:$list = phpok('new_products','fields=thumb') -->
-            <!-- loop from=$list.rslist key=$key value=$value -->
-            <li>
-                <p class="img159px"><a href="{$value.url}" title="{$value.title}"><img src="{$value.thumb.gd.thumb}" width="159" height="183" alt="{$value.title}" /></a></p>
-                <p class="l_name">{$value.title}</p>
-                <p class="l_price">价格：<span>{func price_format $value.price $value.currency_id}</span></p>
-                <p><a href="javascript:$.cart.add('{$value.id}',1);void(0);"><img src="images/buy-btn.jpg" width="157" height="33" /></a></p>
-            </li>
-            <!-- /loop -->
-        </ul>
-    </div>
-    <div class="h_news">
-        <!-- php:$list = phpok('news_catelist') -->
-        <!-- loop from=$list.sublist key=$key value=$value id=list_id -->
-        <div class="plate">
-            <div class="plate_title">
-                <span class="ch_name">{$value.title}</span>
-                <a href="{$value.url}" class="plate_more">更多</a>
-            </div>
-            <dl class="plate_main">
-                <!-- php:$arclist = phpok('titlelist','cateid='.$value.id.'&fields=id') -->
-                <!-- loop from=$arclist.rslist key=$k value=$v -->
-                <dd><span>{func date Y-m $v.dateline}</span><a href="{$v.url}">{$v.title}</a></dd>
+        <div style="width: 1240px; overflow: hidden;">
+            <ul class="newslist clearfix">
+                <!-- loop from=$list.rslist key=$key value=$value -->
+                <li>
+                    <div class="ydate ydate_2">{func date Y.m $value.dateline}<span>{func date d $value.dateline}</span></div>
+                    <div class="tn">
+                        <h3><a href="{$value.url}" title="{$value.title}">{$value.title}</a></h3>
+                        <p>{func phpok_cut $value.content 40 …}</p>
+                    </div>
+                </li>
                 <!-- /loop -->
-            </dl>
+            </ul>
         </div>
-        <!-- if $list_id.num % 2 == '' --><div class="clear"></div><!-- /if -->
-        <!-- /loop -->
     </div>
 </div>
-<div class="cl"></div>
 
-<div class="cooper">
-    <!-- php:$list = phpok('link') -->
-    <div class="cooper_t">
-        <p class="name">{$list.project.title}</p><span class="name_en">{$list.project.entitle}</span>
-        <a href="{url ctrl=post id=$list.project.identifier/}" class="more">+ 申请友情链接</a>
-        <div class="cl"></div>
-    </div>
-    <div class="home_link">
-        <!-- loop from=$list.rslist key=$key value=$value -->
-        <a href="{$value.link}" target="{$value.target}" title="{$value.title}">{$value.title}</a>
-        <!-- /loop -->
+<div class="cont">
+    <div class="w1240">
+        <table width="100%" style="margin-bottom: 55px">
+            <tbody>
+                <tr>
+                    <!-- php:$list = phpok('news_catelist') -->
+                    <!-- php:sort($list.sublist) -->
+                    <!-- loop from=$list.sublist key=$key value=$value -->
+                    <td class="news_block" width="309" valign="top" style="padding-right: 30px;">
+                        <h2 class="tit" style="padding-top: 30px;" onclick="javascript:window.location.href = '{$value.url}'">
+                            <b style="font-size: 22px; color: {if $key == '1'}#0f7361{elseif $key == '2'}#721627{else}#002147{/if}">{$value.title}</b>
+                            <span class="n" style="color: {if $key == '1'}#0f7361{elseif $key == '2'}#721627{else}#002147{/if}; text-transform: uppercase">Primary School</span>
+                        </h2>
+                        <div class="mt15" style="border-top: 11px solid {if $key == '1'}#0f7361{elseif $key == '2'}#721627{else}#002147{/if}">
+                            <a href="{$value.url}">
+                                <img src="{$value.banner.filename}" width="309" height="151" />
+                            </a>
+                        </div>
+                        <ul>
+                            <!-- php:$arclist = phpok('titlelist','cateid='.$value.id.'&fields=id') -->
+                            <!-- loop from=$arclist.rslist key=$k value=$v -->
+                            <li>
+                                <a target="_blank" href="{$v.url}">
+                                    {$v.title}
+                                    <br>
+                                    {func date Y-m-d $v.dateline}
+                                </a>
+                            </li>
+                            <!-- /loop -->
+                        </ul>
+                    </td>
+                    <!-- /loop -->
+                    <td valign="top">
+                        <div class="service">
+                            <h2 class="tit" style="padding-top: 30px;">
+                                <b style="font-size: 22px; color: #313030">服务平台</b>
+                            </h2>
+                            <ul class="service_link">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/quick_link.png">
+                                    </a>
+                                </li>
+                                <li style="margin-right: 0px;">
+                                    <a href="#">
+                                        <img src="images/quick_link2.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/quick_link3.png">
+                                    </a>
+                                </li>
+                                <li style="margin-right: 0px;">
+                                    <a href="mailto:51109638@qq.com">
+                                        <img src="images/quick_link4.png">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="clear"> </div>
+                            <div style="margin-top: 20px">
+                                <a href="About4.aspx">
+                                    <img src="images/photo_pic.png">
+                                </a>
+                            </div>
+                            <div style="margin-top: 20px">
+                                <a href="#">
+                                    <img src="images/libr_btn.png">
+                                </a>
+                            </div>
+                            <div class="select_box">
+                                <input id="myselect" type="text" readonly="readonly" value="友情链接">
+                                <ul class="select_ul" style="display: none;">
+                                    <li>
+                                        <a target="_blank" href="http://www.yangogroup.com.cn/">阳光控股</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
+
 <!-- include tpl=foot -->
