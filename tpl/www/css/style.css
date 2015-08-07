@@ -562,6 +562,40 @@ h1.txtTitle {
     margin: 0 auto;
     width: 1000px;
 }
+.photo_tab {
+}
+.photo_tab ul {
+}
+
+.photo_tab ul li {
+    background: #d6d6d6 none repeat scroll 0 0;
+    float: left;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+    text-align: center;
+    width: 125px;
+}
+.photo_tab ul li.cur, .photo_tab ul li:hover {
+    background: #143473 none repeat scroll 0 0;
+}
+.photo_tab ul li.cur a, .photo_tab ul li:hover a {
+    color: #fff;
+}
+
+/*.picshow {
+    margin: 25px auto;
+    overflow: hidden;
+    width: 1040px;
+}*/
+/*.picshowtop {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 1040px;
+    z-index: 1;
+}*/
 .arrow{background:url('../images/icon3.gif') center center no-repeat;padding:0 3px;}
 .mb10{ margin-bottom:10px;}
 .page_left{ width:200px; float:left; border-right:1px solid #ccc;}
@@ -841,14 +875,22 @@ h1.txtTitle {
 .photolist li img{border-radius:5px 5px 0 0;width:160px;}
 .photolist li p{ line-height:22px; padding:2px; text-align:center;overflow:hidden;height:22px;}
 
-.photo{ overflow:hidden; padding-top:10px;}
+.photo{ overflow:hidden; width: 1040px;margin: 25px auto;}
+
+.picplayerlist {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 1040px;
+    z-index: 1;
+}
 .photo .date-hits {color: #A9A9A9;text-align: center; line-height:24px; border-bottom:1px dashed #ccc; margin:0 5px 10px;}
 .photo h1{ text-align:center; font-size:18px; overflow:hidden; margin-bottom:10px;}
-.photo ul.pictures{list-style:none;text-align:center;margin:0;padding:0;width:760px;}
-.photo ul.pictures li{text-align:center;margin-bottom:15px;}
-.photo ul.pictures li .img{width:760px;text-align:center;overflow:hidden;}
+/*.photo ul.pictures{list-style:none;text-align:center;margin:0;padding:0;width:760px;}*/
+/*.photo ul.pictures li{text-align:center;margin-bottom:15px;}*/
+/*.photo ul.pictures li .img{width:760px;text-align:center;overflow:hidden;}
 .photo ul.pictures li .img img{max-width:760px;border-radius:5px;background:url('../images/loading.gif') center center no-repeat;}
-.photo ul.pictures li .txt{text-align:center;overflow:hidden;padding-top:10px;}
+.photo ul.pictures li .txt{text-align:center;overflow:hidden;padding-top:10px;}*/
 
 .photo .content{ margin:5px 0 10px 0; line-height:180%;text-align:left;border:1px solid #ccc;padding:5px;font-size:14px;background:#EFEFEF;}
 .photo .d_txt{ margin-bottom:10px; line-height:22px;font-size:14px;color:#000;}
