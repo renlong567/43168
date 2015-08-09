@@ -24,43 +24,29 @@
 </div>
 <div class="w1240">
     <div class="photo_tab" style="width: 1040px; margin: 25px auto">
-        <!-- include tpl=block_catelist -->
+    <!-- include tpl=block_catelist -->
     </div>
     <div class="cl"></div>
     <div class="photo">
-        <!-- if $rslist.0.pictures -->
+        <!-- if $rs.pictures -->
         <div class="picplayerlist">
             <ul class="pictures">
-                <!-- loop from=$rslist.0.pictures key=$key value=$value -->
+                <!-- loop from=$rs.pictures key=$key value=$value -->
                 <li>
-                    <a href="{$value.filename}" target="_blank"><img src="{$value.filename}" width="900" height="600" border="0" alt="{$value.title}" /></a>
+                    <div class="img"><a href="{$value.gd.auto}" target="_blank"><img src="{#images#}/blank.gif" _src="{$value.gd.photo}" border="0" alt="{$value.title}" /></a></div>
                     <!-- if $value.note -->
                     <div class="content">{$value.note}</div>
                     <!-- /if -->
                 </li>
                 <!-- /loop -->
             </ul>
-            <div class="picshowlist">
-                <div class="picshowlist_mid">
-                    <div class="picmidleft"><a href="javascript:void(0);" class="prev"><img src="images/left1.jpg" alt="上一张" /></a></div>
-                    <div class="picmidmid">
-                        <ul class="page_ul">
-                            <!-- loop from=$rslist.0.pictures key=$key value=$value -->
-                            <li><a href="{$value.filename}" target="{$value.target}" title="{$value.title}"><img src="{$value.filename}" width="106" height="76" alt="{$value.title}" /></a></li>
-                            <!-- /loop -->
-                        </ul>
-                    </div>
-                    <div class="picmidright"><a href="javascript:void(0);" class="next"><img src="images/right1.jpg" alt="下一张" /></a></div>
-                </div>
+            <div class="pn">
+                <a href="javascript:void(0);" class="prev">上一张</a> (点击图片在新窗口查看原图) <a href="javascript:void(0);" class="next">下一张</a>
             </div>
         </div>
         <script type="text/javascript">
             $(document).ready(function () {
-                $(".picplayerlist").slide({
-                    'titCell': '.page_ul li',
-                    'mainCell': '.pictures',
-                    'autoPlay': true
-                });
+                jQuery(".picplayerlist").slide({'mainCell': "ul.pictures", 'effect': "left", 'switchLoad': '_src'});
             });
         </script>
         <!-- /if -->
