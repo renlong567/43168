@@ -22,7 +22,7 @@
     });
 </script>
 <div class="news">
-    <!-- php:$list = phpok('news','fields=id') -->
+    <!-- php:$list = phpok('news') -->
     <div class="demo pb10">
         <b class="fl f14" style="font-size:16px; color: #B62020;">
             <img src="images/ico_notice.png">
@@ -129,7 +129,7 @@
                             </ul>
                             <div class="clear"> </div>
                             <div style="margin-top: 20px">
-                                <a href="About4.aspx">
+                                <a href="#">
                                     <img src="images/photo_pic.png">
                                 </a>
                             </div>
@@ -141,11 +141,21 @@
                             <div class="select_box">
                                 <input id="myselect" type="text" readonly="readonly" value="友情链接">
                                 <ul class="select_ul" style="display: none;">
+                                    <!-- php:$list = phpok('link') -->
+                                    <!-- loop from=$list.rslist key=$k value=$v -->
                                     <li>
-                                        <a target="_blank" href="http://www.yangogroup.com.cn/">阳光控股</a>
+                                        <a target="{$v.target}" href="{$v.link}">{$v.title}</a>
                                     </li>
+                                    <!-- /loop -->
                                 </ul>
                             </div>
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $("#myselect").click(function () {
+                                        $(".select_ul").toggle('fast');
+                                    });
+                                });
+                            </script>
                         </div>
                     </td>
                 </tr>
