@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/admin/order_control.php
 	Note	: 订单管理，编辑和删除等相关操作
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年12月18日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class order_control extends phpok_control

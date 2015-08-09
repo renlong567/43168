@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/admin/ueditor_control.php
 	Note	: Ueditor 编辑器中涉及到上传的操作
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年06月26日 19时04分
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class ueditor_control extends phpok_control

@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/admin/res_control.php
 	Note	: 资源管理器
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-12-27 12:02
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class res_control extends phpok_control

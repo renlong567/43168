@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/api/email_control.php
 	Note	: 邮件相关操作
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2015年06月13日 11时31分
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class email_control extends phpok_control

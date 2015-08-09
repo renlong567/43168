@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/api/opt_control.php
 	Note	: OPT选项功能前后台数据读取
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年11月21日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class opt_control extends phpok_control

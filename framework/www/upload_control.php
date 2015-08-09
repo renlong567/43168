@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/admin/upload_control.php
 	Note	: 附件上传操作
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013-01-09 10:51
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class upload_control extends phpok_control

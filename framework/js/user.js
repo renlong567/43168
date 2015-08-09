@@ -1,10 +1,6 @@
 /***********************************************************
 	Filename: {phpok}/js/user.js
 	Note	: 会员管理中涉及到的JS
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年5月2日
 ***********************************************************/
 //检查添加操作
 function check_add()

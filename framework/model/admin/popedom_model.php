@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/model/popedom.php
 	Note	: 权限信息参数设置
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年7月30日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class popedom_model extends popedom_model_base

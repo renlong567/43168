@@ -2,10 +2,6 @@
 /*****************************************************************************************
 	文件： payment/chinapay/chinapay.php
 	备注： Chinapay处理类
-	版本： 4.x
-	网站： www.phpok.com
-	作者： qinggan <qinggan@188.com>
-	时间： 2014年5月4日
 *****************************************************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class chinapay_lib

@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: phpok/init.php
 	Note	: PHPOK框架入口引挈文件，请不要改动此文件
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-10-15 15:30
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 //强制使用UTF-8编码
@@ -130,8 +126,8 @@ class _init_phpok
 	public $license = "LGPL";
 	public $license_code = "ED988858BCB1903A529C762DBA51DD40";
 	public $license_date = "2012-10-29";
-	public $license_name = "phpok";
-	public $license_site = "phpok.com";
+	public $license_name = "php";
+	public $license_site = "php.com";
 	public $license_powered = true;
 
 	//是否是手机端，如果使用手机端可能会改写网址
@@ -326,7 +322,7 @@ class _init_phpok
 				$site_rs = $this->model("site")->get_one_default();
 			}
 			if(!$site_rs){
-				$site_rs = array('title'=>'PHPOK.Com');
+				$site_rs = array('title'=>'PHP.Com');
 			}
 			$this->site = $site_rs;
 			return true;

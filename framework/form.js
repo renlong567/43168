@@ -1,10 +1,6 @@
 /***********************************************************
 	Filename: {phpok}/form.js
 	Note	: 自定义表单中涉及到的JS
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-12-26 11:02
 ***********************************************************/
 function phpok_form_password(id,len)
 {

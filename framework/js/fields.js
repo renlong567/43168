@@ -1,10 +1,6 @@
 /***********************************************************
 	Filename: phpok/js/fields.js
 	Note	: 字段管理中涉及的JS
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-11-26 17:07
 ***********************************************************/
 // 验证标识串
 function check_identifier(is_alert)

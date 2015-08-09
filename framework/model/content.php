@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}model/content.php
 	Note	: 内容
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年9月24日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class content_model_base extends phpok_model

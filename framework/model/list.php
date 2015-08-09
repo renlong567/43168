@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/model/list.php
 	Note	: 读取内容列表
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013-04-15 02:17
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class list_model_base extends phpok_model

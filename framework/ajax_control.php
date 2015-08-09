@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/ajax_control.php
 	Note	: Ajax公共操作，不限前台，后台
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年06月15日 10时02分
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class ajax_control extends phpok_control

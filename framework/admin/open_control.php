@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/admin/open_control.php
 	Note	: 虚弹窗口管理器
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013-02-07 17:23
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class open_control extends phpok_control

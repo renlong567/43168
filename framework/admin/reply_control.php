@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/admin/reply_control.php
 	Note	: 回复内容管理
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年7月2日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class reply_control extends phpok_control

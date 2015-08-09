@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: admin/fields_control.php
 	Note	: 字段管理
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-10-31 22:29
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class fields_control extends phpok_control

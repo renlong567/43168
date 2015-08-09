@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/model/cate.php
 	Note	: 栏目管理
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-12-06 10:09
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class cate_model_base extends phpok_model

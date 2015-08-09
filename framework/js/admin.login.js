@@ -1,10 +1,6 @@
 /***********************************************************
 	Filename: {phpok}/js/admlogin.js
 	Note	: 管理员登录页涉及到的JS
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2014年1月6日
 ***********************************************************/
 //验证码
 function login_code(appid)

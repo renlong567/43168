@@ -1,10 +1,6 @@
 /***********************************************************
 	Filename: {phpok}/js/currency.js
 	Note	: 货币管理中涉及到的JS
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年11月13日
 ***********************************************************/
 function set_sort()
 {

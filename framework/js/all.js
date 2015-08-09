@@ -1,10 +1,6 @@
 /***********************************************************
 	Filename: {phpok}/js/all.js
 	Note	: 全局模块参数设置
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-12-19 20:20
 ***********************************************************/
 //检查网站配置域名是否符合要求
 function all_setting_check()

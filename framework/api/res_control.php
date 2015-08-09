@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/api/res_control.php
 	Note	: 附件相关信息
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年12月4日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class res_control extends phpok_control

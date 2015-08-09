@@ -2,10 +2,6 @@
 /*****************************************************************************************
 	文件： {phpok}/api/upload_control.php
 	备注： 前端附件上传接口
-	版本： 4.x
-	网站： www.phpok.com
-	作者： qinggan <qinggan@188.com>
-	时间： 2014年7月10日
 *****************************************************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class upload_control extends phpok_control

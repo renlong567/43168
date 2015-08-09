@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/admin/plugin_control.php
 	Note	: 插件中心
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-12-08 10:04
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class plugin_control extends phpok_control

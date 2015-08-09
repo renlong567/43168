@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/admin/module_control.php
 	Note	: 模块管理器
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-11-29 20:21
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class module_control extends phpok_control

@@ -2,10 +2,6 @@
 /*****************************************************************************************
 	文件： {phpok}/model/www/usergroup_model.php
 	备注： 用户组前端相应操作
-	版本： 4.x
-	网站： www.phpok.com
-	作者： qinggan <qinggan@188.com>
-	时间： 2014年10月6日
 *****************************************************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class usergroup_model extends usergroup_model_base

@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/model/lang.php
 	Note	: 语言包管理
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年10月20日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class lang_model_base extends phpok_model

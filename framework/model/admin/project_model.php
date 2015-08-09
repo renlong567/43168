@@ -2,10 +2,6 @@
 /*****************************************************************************************
 	文件： {phpok}/model/admin/project_model.php
 	备注： 项目管理
-	版本： 4.x
-	网站： www.phpok.com
-	作者： qinggan <qinggan@188.com>
-	时间： 2015年02月05日 23时22分
 *****************************************************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class project_model extends project_model_base

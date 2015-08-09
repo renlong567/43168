@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/admin/call_control.php
 	Note	: 数据调用中心
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013-04-18 02:22
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class call_control extends phpok_control

@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: index.php
 	Note	: 单一文件入口
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-10-15 15:26
 ***********************************************************/
 define("PHPOK_SET",true);
 
@@ -18,15 +14,6 @@ define("ROOT",str_replace("\\","/",dirname(__FILE__))."/");
 
 //定义框架
 define("FRAMEWORK",ROOT."framework/");
-
-
-//检测是否已安装，如未安装跳转到安装页面
-//建议您在安装成功后去除这个判断。
-if(!is_file(ROOT."data/install.lock"))
-{
-	header("Location:phpokinstall.php");
-	exit;
-}
 
 require_once(FRAMEWORK.'init.php');
 ?>

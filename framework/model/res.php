@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/model/res.php
 	Note	: 资源读取
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-12-27 13:09
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class res_model_base extends phpok_model

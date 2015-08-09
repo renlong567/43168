@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: phpok_tpl_helper.php
 	Note	: 在PHPOK模板中常用的函数，此函数在action前才加载
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-11-07 20:27
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 function phpok($id,$ext="")

@@ -1,10 +1,6 @@
 /***********************************************************
 	Filename: {phpok}/js/module.js
 	Note	: 后台模型管理涉及到的JS
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-11-29 21:20
 ***********************************************************/
 //检测标题名称是否为空
 function check_title(is_alert)

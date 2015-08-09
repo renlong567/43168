@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: model/opt.php
 	Note	: 可选组
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-11-02 19:41
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class opt_model_base extends phpok_model

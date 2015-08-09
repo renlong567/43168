@@ -2,10 +2,6 @@
 /*****************************************************************************************
 	文件： {phpok}/model/admin/html_model.php
 	备注： HTML生成工具涉及到的Model信息
-	版本： 4.x
-	网站： www.phpok.com
-	作者： qinggan <qinggan@188.com>
-	时间： 2014年7月30日
 *****************************************************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class html_model extends html_model_base

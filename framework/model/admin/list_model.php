@@ -2,10 +2,6 @@
 /*****************************************************************************************
 	文件： {phpok}/model/admin/list_model.php
 	备注： 主题内容管理
-	版本： 4.x
-	网站： www.phpok.com
-	作者： qinggan <qinggan@188.com>
-	时间： 2015年02月06日 22时18分
 *****************************************************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class list_model extends list_model_base

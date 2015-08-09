@@ -157,10 +157,7 @@
 
 })(jQuery);
 
-/*!
- * http://www.phpok.com/
- *
- * Copyright 2011, phpok.com
+/*
  * Released under the MIT, BSD, and LGPL Licenses.
  * 字符串编码，使用方法： $.str.encode(string);
  * 字符串合并，使用方法： $.str.join(str1,str2);

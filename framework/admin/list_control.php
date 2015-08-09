@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: admin/list_control.php
 	Note	: 内容控制器
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-10-31 19:45
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class list_control extends phpok_control

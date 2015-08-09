@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}models/id.php
 	Note	: ID管理工具
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-11-27 13:23
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class id_model_base extends phpok_model

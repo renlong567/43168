@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: phpok/model/admin.php
 	Note	: 管理员信息管理
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-10-20 14:20
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class admin_model_base extends phpok_model

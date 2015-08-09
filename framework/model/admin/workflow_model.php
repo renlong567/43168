@@ -2,10 +2,6 @@
 /*****************************************************************************************
 	文件： {phpok}/model/admin/workflow_model.php
 	备注： 工作流后台管理
-	版本： 4.x
-	网站： www.phpok.com
-	作者： qinggan <qinggan@188.com>
-	时间： 2015年06月20日 14时04分
 *****************************************************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class workflow_model extends workflow_model_base

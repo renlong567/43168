@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/admin/site_control.php
 	Note	: 站点管理器
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年10月8日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class site_control extends phpok_control

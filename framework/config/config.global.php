@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}config/config.global.php
 	Note	: 全站全局参数
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年9月3日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 

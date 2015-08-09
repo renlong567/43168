@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/model/www/order_model.php
 	Note	: 订单信息及管理
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年12月8日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class order_model extends order_model_base

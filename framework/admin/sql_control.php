@@ -2,10 +2,6 @@
 /*****************************************************************************************
 	文件： {phpok}/admin/sql_control.php
 	备注： 数据库备份及恢复操作
-	版本： 4.x
-	网站： www.phpok.com
-	作者： qinggan <qinggan@188.com>
-	时间： 2014年3月19日
 *****************************************************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class sql_control extends phpok_control

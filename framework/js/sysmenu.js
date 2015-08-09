@@ -1,10 +1,6 @@
 /***********************************************************
 	Filename: {phpok}/js/sysmenu.js
 	Note	: 核心配置
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-12-05 22:43
 ***********************************************************/
 //设置状态
 function set_status(id)

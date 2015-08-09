@@ -1,10 +1,6 @@
 /***********************************************************
 	Filename: {phpok}js/global.admin.js
 	Note	: 后台公共JS
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年9月12日
 ***********************************************************/
 function alt_open(id,note)
 {

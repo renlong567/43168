@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: admin/opt_control.php
 	Note	: 下拉菜单管理器，支持无限级别下拉菜单
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-11-02 19:37
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class opt_control extends phpok_control

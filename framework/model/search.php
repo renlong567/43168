@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/model/search.php
 	Note	: 搜索涉及到的查询，这里仅用于全站搜索简单查询
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年11月21日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class search_model_base extends phpok_model

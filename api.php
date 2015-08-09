@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: api.php
 	Note	: API接口统一返回JSON数据
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年10月30日
 ***********************************************************/
 define("PHPOK_SET",true);
 

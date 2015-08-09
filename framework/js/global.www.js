@@ -1,10 +1,6 @@
 /***********************************************************
 	Filename: {phpok}js/global.www.js
 	Note	: 前台公共JS加载
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年9月12日
 ***********************************************************/
 //前台通用弹出窗口
 function phpok_open(id,title)

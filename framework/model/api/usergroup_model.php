@@ -2,10 +2,6 @@
 /*****************************************************************************************
 	文件： {phpok}/model/api/usergroup_model.php
 	备注： API接口下的会员Model处理
-	版本： 4.x
-	网站： www.phpok.com
-	作者： qinggan <qinggan@188.com>
-	时间： 2014年10月24日 11时11分
 *****************************************************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class usergroup_model extends usergroup_model_base

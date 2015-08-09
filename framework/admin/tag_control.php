@@ -2,10 +2,6 @@
 /*****************************************************************************************
 	文件： {phpok}/admin/tag_control.php
 	备注： Tag标签管理工具
-	版本： 4.x
-	网站： www.phpok.com
-	作者： qinggan <qinggan@188.com>
-	时间： 2014年5月25日
 *****************************************************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class tag_control extends phpok_control

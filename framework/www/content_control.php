@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/www/content_control.php
 	Note	: 内容信息
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-11-27 11:24
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class content_control extends phpok_control

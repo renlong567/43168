@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: plugins/identifier/install.php
 	Note	: 有道翻译插件安装
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年11月2日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class install_identifier extends phpok_plugin

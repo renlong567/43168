@@ -2,10 +2,6 @@
 /*****************************************************************************************
 	文件： {phpok}/admin/rescate_control.php
 	备注： 资源归档管理
-	版本： 4.x
-	网站： www.phpok.com
-	作者： qinggan <qinggan@188.com>
-	时间： 2015年04月24日 23时05分
 *****************************************************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class rescate_control extends phpok_control

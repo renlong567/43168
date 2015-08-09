@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/model/form.php
 	Note	: 表单选择器
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013-03-12 17:34
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class form_model_base extends phpok_model

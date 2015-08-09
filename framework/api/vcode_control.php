@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/api/vcode_control.php
 	Note	: 验证码
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年11月1日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class vcode_control extends phpok_control

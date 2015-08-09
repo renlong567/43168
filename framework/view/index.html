@@ -93,14 +93,13 @@
 <div class="foot">
 	<div class="foot_left">
 		<!-- if $app->license_powered -->
-		Powered by <a href="http://www.phpok.com" target="_blank">phpok.com</a>,
+		Powered by <a href="#" target="_blank">#.com</a>,
 		<!-- /if -->
-		CopyRight &copy; {$license_site} {func license_date}, All Right Reserved.
+                CopyRight &copy; {lang郑州航空港区育人高级中学}&nbsp;{func license_date}, All Right Reserved.
 		<!-- if $sys.debug -->
 		<br />{func debug_time 1 1 1 1}
 		<!-- /if -->
 	</div>
-	<div class="foot_right"><span class="darkblue">{$license}</span>{lang，版本：}{$version}</div>
 </div>
 <script type="text/javascript">
 function pendding_info()
@@ -155,17 +154,6 @@ $(document).ready(function(){
 	},{
 		'text': "{lang显示桌面}",
 		'func': function() {$.desktop.tohome();}    
-	}],[{
-		'text':'{lang关于PHPOK}',
-		'func':function(){
-			$.dialog({
-				'title':'{lang关于PHPOK}',
-				'lock':true,
-				'drag':false,
-				'fixed':true,
-				'content':'PHPOK企业站系统采用PHP+MySQL架构，基于LGPL协议开源并且免费。<br />本程序支持分类，项目，站点信息，模块等数据自定义<br />程序无任何内置广告代码<br />在使用过程序中，有任何问题，均可以登录 <a href="http://www.phpok.com/help.html" target="_blank" class="red">www.phpok.com/help.html</a> 查阅<br />如果您认可并打算捐助我们，点这里查看我们的收款账号：<a href="http://www.phpok.com/pay.html" target="_blank"style="color:red;">www.phpok.com/pay.html</a>'
-			});
-		}
 	}]];
 	$(window).smartMenu(r_menu,{'textLimit':8});
 	$(document).keydown(function(e){

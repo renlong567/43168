@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/admin/system_control.php
 	Note	: 核心配置
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-12-04 16:07
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class system_control extends phpok_control

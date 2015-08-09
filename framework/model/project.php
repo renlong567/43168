@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: phpok/model/project.php
 	Note	: 应用信息
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-10-15 18:05
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class project_model_base extends phpok_model

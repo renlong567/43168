@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: phpok/phpok_tpl.php
 	Note	: PHPOK模板引挈，简单实用
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2015年01月21日 20时27分
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class phpok_tpl

@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/libs/ftp.php
 	Note	: FTP基本操作
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013-02-18 17:46
 ***********************************************************/
 class ftp_lib
 {

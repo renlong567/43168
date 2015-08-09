@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/api/post_control.php
 	Note	: 存储发布的项目信息
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年11月11日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class post_control extends phpok_control

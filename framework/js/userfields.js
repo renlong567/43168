@@ -1,10 +1,6 @@
 /***********************************************************
 	Filename: {phpok}/js/userfields.js
 	Note	: 会员自定义字段管理器
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年5月4日
 ***********************************************************/
 //编辑字段
 function user_field_edit(id)

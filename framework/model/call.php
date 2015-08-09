@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/model/call.php
 	Note	: 数据调用中心涉及到的SQL操作
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013-04-18 02:24
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class call_model_base extends phpok_model

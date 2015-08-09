@@ -2,10 +2,6 @@
 /*****************************************************************************************
 	文件： {phpok}/admin/workflow_control.php
 	备注： 工作流管理
-	版本： 4.x
-	网站： www.phpok.com
-	作者： qinggan <qinggan@188.com>
-	时间： 2015年06月20日 15时42分
 *****************************************************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class workflow_control extends phpok_control

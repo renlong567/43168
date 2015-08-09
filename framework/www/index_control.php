@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/www/index_control.php
 	Note	: 网站首页及APP的封面页
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2015年06月06日 09时09分
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class index_control extends phpok_control

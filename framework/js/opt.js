@@ -1,10 +1,6 @@
 /***********************************************************
 	Filename: js/opt.js
 	Note	: 选项组用到的JS
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-11-02 20:16
 ***********************************************************/
 var base_url = basefile + "?" + ctrl_id + "=opt&"+func_id+"=";
 

@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: phpok/phpok_helper.php
 	Note	: 通用函数
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-10-17 14:49
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 
@@ -755,7 +751,7 @@ function tpl_head($array=array())
 	$html .= '<meta http-equiv="Cache-control" content="no-cache,no-store,must-revalidate,max-age=3" />'."\n\t";
 	$html .= '<meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT" />'."\n\t";
 	$html .= '<meta name="renderer" content="webkit">'."\n\t";
-	$html .= '<meta name="author" content="phpok,admin@phpok.com" />'."\n\t";
+	$html .= '<meta name="author" content="RenLong" />'."\n\t";
 	$html .= '<meta name="license" content="'.$GLOBALS['app']->license.'" />'."\n\t";
 	$seo = $GLOBALS['app']->site['seo'];
 	if($seo['keywords']){
@@ -884,7 +880,7 @@ function form_html($type='text',$id='phpok',$attr='',$content='')
 //取得授权时间
 function license_date()
 {
-	if($GLOBALS['app']->license_site == '.phpok.com') return '2005-'.date("Y",$GLOBALS['app']->time);
+	if($GLOBALS['app']->license_site == '.php.com') return '2005-'.date("Y",$GLOBALS['app']->time);
 	$date_start = substr($GLOBALS['app']->license_date,0,4);
 	$date_end = date("Y",$GLOBALS['app']->time);
 	if($date_start >= $date_end) return $date_end;

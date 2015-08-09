@@ -2,10 +2,6 @@
 /*****************************************************************************************
 	文件： {phpok}/model/api/payment_model.php
 	备注： 支付信息
-	版本： 4.x
-	网站： www.phpok.com
-	作者： qinggan <qinggan@188.com>
-	时间： 2014年5月2日
 *****************************************************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class payment_model extends payment_model_base

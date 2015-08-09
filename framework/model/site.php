@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: phpok/model/site.php
 	Note	: 网站信息
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-10-17 15:15
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class site_model_base extends phpok_model

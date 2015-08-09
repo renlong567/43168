@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/libs/common.php
 	Note	: 常用信息调用
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2014年2月8日
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class common_lib

@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/api/register_control.php
 	Note	: 注册API接口
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2014年10月11日 05时41分
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class register_control extends phpok_control

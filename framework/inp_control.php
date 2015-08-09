@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/inp_control.php
 	Note	: 自定义表单数据获取接口
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-10-29 20:22
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class inp_control extends phpok_control

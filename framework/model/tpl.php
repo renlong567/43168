@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: phpok/model/tpl.php
 	Note	: 模板管理，涉及到的数据表：qinggan_tpl
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2012-10-17 15:15
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class tpl_model_base extends phpok_model

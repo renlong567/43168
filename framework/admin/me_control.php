@@ -2,10 +2,6 @@
 /***********************************************************
 	Filename: {phpok}/admin/me_control.php
 	Note	: 管理员面板信息
-	Version : 4.0
-	Web		: www.phpok.com
-	Author  : qinggan <qinggan@188.com>
-	Update  : 2013年04月24日 06时14分
 ***********************************************************/
 if(!defined("PHPOK_SET")){exit("<h1>Access Denied</h1>");}
 class me_control extends phpok_control
