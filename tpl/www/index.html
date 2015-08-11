@@ -22,11 +22,11 @@
     });
 </script>
 <div class="news">
-    <!-- php:$list = phpok('news') -->
+    <!-- php:$list = phpok('tzgg') -->
     <div class="demo pb10">
         <b class="fl f14" style="font-size:16px; color: #B62020;">
             <img src="images/ico_notice.png">
-            {$list.project.title}
+            {$list.cate.title}：
         </b>
         <div id="wfgd1" class="wfgd">
             <ul class="wfgd-ul1" style="width: 7064px;">
@@ -36,15 +36,7 @@
             </ul>
         </div>
     </div>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".wfgd").slide({
-//                'titCell': '.page_ul li',
-                'mainCell': 'wfgd-ul1',
-                'autoPlay': true
-            });
-        });
-    </script>
+
     <!-- php:$list = phpok('news') -->
     <div class="w1240">
         <h2 class="tit">

@@ -1,7 +1,6 @@
-<!-- head title=$title css="css/style.css,artdialog.css" extjs="jquery.artdialog.js" js="js/global.js" close=false html5=true -->
+<!-- head title=$title css="css/style.css,artdialog.css" extjs="jquery.artdialog.js" js="js/global.js,js/imglist.js" close=false html5=true -->
 <script type="text/javascript">
     $(document).ready(function () {
-        $.cart.total();
         $.phpok.json(api_url('login', 'status'), function (data) {
             if (data.status == 'ok') {
                 var logout = "javascript:$.user.logout('" + data.content.user_name + "');void(0)";
@@ -39,6 +38,39 @@
         }
     }
 </script>
+<style>
+    .rollphotos
+    {
+        width: 1300px;
+        margin: 0 auto;
+        padding-top: 542px;
+    }
+    #demo
+    {
+        height: 267px;
+    }
+    #demo .imgBorder
+    {
+        margin: 10px;
+    }
+    #demo p a
+    {
+        color: #111;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 44px;
+    }
+    #demo .imgBorder img
+    {
+        width: 267px;
+    }
+</style>
+<style>
+    /*无缝滚动*/
+    .demo{width:1240px;margin:10px auto;clear:right;}
+    .wfgd{height:24px;overflow:hidden;}
+    .wfgd .wfgd-ul1 li{width:auto;padding-left:10px; font-size:14px; margin-right:20px;line-height:22px;text-align:center;float:left;background:url(images/hs_dot2.gif) left center no-repeat; }
+</style>
 </head>
 <body>
     <div class="mainbox">
