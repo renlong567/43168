@@ -83,7 +83,12 @@
                             <!-- loop from=$arclist.rslist key=$k value=$v -->
                             <li>
                                 <a target="_blank" href="{$v.url}">
+                                    <!-- php:$checkLength = mb_strlen($v.title,'utf-8') -->
+                                    <!-- if $checkLength > 20 -->
+                                    {func phpok_cut $v.title 19 …}
+                                    <!-- else -->
                                     {$v.title}
+                                    <!-- /if -->
                                     <br>
                                     {func date Y-m-d $v.dateline}
                                 </a>
