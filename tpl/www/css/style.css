@@ -122,7 +122,6 @@ b, strong {
 }
 .w1240 {
     margin: 0 auto;
-    min-height: 500px;
     position: relative;
     width: 1240px;
     z-index: 99;
@@ -616,6 +615,14 @@ h1.txtTitle {
     width: 1040px;
     z-index: 1;
 }*/
+
+.bm {
+    background: #e8e8e8;
+    font-size: 16px;
+    line-height: 34px;
+    margin-top: 25px;
+    padding: 35px;
+}
 .arrow{background:url('../images/icon3.gif') center center no-repeat;padding:0 3px;}
 .mb10{ margin-bottom:10px;}
 .page_left{ width:200px; float:left; border-right:1px solid #ccc;}

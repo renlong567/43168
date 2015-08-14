@@ -1,0 +1,32 @@
+<!-- include tpl=head title=$page_rs.title menutitle=$parent_rs.title -->
+<!-- php:$list = phpok('zsxx') -->
+<div class="inside_banner">
+    <div class="w1240" style="min-height: 260px">
+        <div class="channelInfo">
+            <i></i>
+            <h2>{$list.title}</h2>
+            <p class="yahei">{$list.note}</p>
+        </div>
+    </div>
+</div>
+<div class="submenu">
+    <div class="submeu_list clearfix about_nav1">
+        <ul>
+            <!-- sublist pid=$parent_rs.id -->
+            <!-- php:$num=1; -->
+            <!-- loop from=$list key=$key value=$value -->
+            <li class="about_nav{$num}"><a {if $page_rs.id == $value.id} class="on"{/if} href="{$value.url}" title="{$value.title}"></a></li>
+            <!-- php:++$num; -->
+            <!-- /loop -->
+            <li class="empty" style="width: 316px"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="w1240">
+    <div class="about f16">
+        {$page_rs.content}
+    </div>
+</div>
+<div class="cl"></div>
+<!-- include tpl=foot -->
