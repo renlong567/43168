@@ -1,18 +1,5 @@
 <!-- head title=$title css="css/style.css,artdialog.css" extjs="jquery.artdialog.js" js="js/global.js,js/imglist.js" close=false html5=true -->
 <script type="text/javascript">
-    $(document).ready(function () {
-        $.phpok.json(api_url('login', 'status'), function (data) {
-            if (data.status == 'ok') {
-                var logout = "javascript:$.user.logout('" + data.content.user_name + "');void(0)";
-                var html = ' | <a href="{url ctrl=usercp/}">个人中心</a> | <a href="' + logout + '">退出</a>';
-            } else {
-                var html = ' | <a href="{url ctrl=login/}">登录</a> | <a href="{url ctrl=register/}">注册</a>';
-            }
-            $("#top_html_user_login").html(html);
-        });
-    });
-</script>
-<script type="text/javascript">
     function goTopEx() {
         var obj = document.getElementById("goTopBtn");
         function getScrollTop() {
@@ -81,7 +68,7 @@
                     <ul>
                         <!-- php:$list = phpok('menu') -->
                         <!-- loop from=$list.rslist key=$key value=$value id=list_id -->
-                        <li{if $menutitle == $value.title} class="current"{/if}>
+                        <li>
                             <a{if $list_id.num == 1} class="first"{/if}{if $list_id.num == $list_id.total} class="last"{/if} href="{$value.url}" title="{$value.title}" target="{$value.target}">{$value.title}</a>
                             <!-- if $value.sonlist -->
                             <ul>
