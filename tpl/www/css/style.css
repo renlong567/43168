@@ -409,90 +409,83 @@ b, strong {
     margin-right: 12px;
     width: 142px;
 }
-.submenu .submeu_list ul li.about_nav1 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav1.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav1 a:hover, .submenu .submeu_list ul li.about_nav1 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav1.png") no-repeat scroll 0 -112px;
-}
-.submenu .submeu_list ul li.about_nav2 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav2.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav2 a:hover, .submenu .submeu_list ul li.about_nav2 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav2.png") no-repeat scroll 0 -112px;
-}
-.submenu .submeu_list ul li.about_nav3 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav3.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav3 a:hover, .submenu .submeu_list ul li.about_nav3 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav3.png") no-repeat scroll 0 -112px;
-}
-.submenu .submeu_list ul li.about_nav4 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav4.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav4 a:hover, .submenu .submeu_list ul li.about_nav4 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav4.png") no-repeat scroll 0 -112px;
-}
-.submenu .submeu_list ul li.about_nav5 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav5.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav5 a:hover, .submenu .submeu_list ul li.about_nav5 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav5.png") no-repeat scroll 0 -112px;
-}
-.submenu .submeu_list ul li.about_nav6 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav6.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav6 a:hover, .submenu .submeu_list ul li.about_nav6 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav6.png") no-repeat scroll 0 -112px;
-}
-.submenu .submeu_list ul li.about_nav7 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav7.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav7 a:hover, .submenu .submeu_list ul li.about_nav7 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav7.png") no-repeat scroll 0 -112px;
-}
-.submenu .submeu_list ul li.about_nav8 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav8.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav8 a:hover, .submenu .submeu_list ul li.about_nav8 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav8.png") no-repeat scroll 0 -112px;
-}
-.submenu .submeu_list ul li.about_nav9 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav9.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav9 a:hover, .submenu .submeu_list ul li.about_nav9 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav9.png") no-repeat scroll 0 -112px;
-}
-.submenu .submeu_list ul li.about_nav10 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav10.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav10 a:hover, .submenu .submeu_list ul li.about_nav10 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav10.png") no-repeat scroll 0 -112px;
-}
-.submenu .submeu_list ul li.about_nav11 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav11.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav11 a:hover, .submenu .submeu_list ul li.about_nav11 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav11.png") no-repeat scroll 0 -112px;
-}
-.submenu .submeu_list ul li.about_nav12 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav12.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav12 a:hover, .submenu .submeu_list ul li.about_nav12 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav12.png") no-repeat scroll 0 -112px;
-}
-.submenu .submeu_list ul li.about_nav13 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav13.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav13 a:hover, .submenu .submeu_list ul li.about_nav13 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav13.png") no-repeat scroll 0 -112px;
-}
-.submenu .submeu_list ul li.about_nav14 a {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav14.png") no-repeat scroll 0 0;
-}
-.submenu .submeu_list ul li.about_nav14 a:hover, .submenu .submeu_list ul li.about_nav14 a.on {
-    background: rgba(0, 0, 0, 0) url("../images/about_nav14.png") no-repeat scroll 0 -112px;
-}
+
+.submenu .submeu_list ul li.about_nav1 a { background: rgba(0, 0, 0, 0) url("../images/about_nav1.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav2 a { background: rgba(0, 0, 0, 0) url("../images/about_nav2.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav3 a { background: rgba(0, 0, 0, 0) url("../images/about_nav3.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav4 a { background: rgba(0, 0, 0, 0) url("../images/about_nav4.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav5 a { background: rgba(0, 0, 0, 0) url("../images/about_nav5.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav6 a { background: rgba(0, 0, 0, 0) url("../images/about_nav6.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav7 a { background: rgba(0, 0, 0, 0) url("../images/about_nav7.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav8 a { background: rgba(0, 0, 0, 0) url("../images/about_nav8.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav9 a { background: rgba(0, 0, 0, 0) url("../images/about_nav9.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav10 a { background: rgba(0, 0, 0, 0) url("../images/about_nav10.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav11 a { background: rgba(0, 0, 0, 0) url("../images/about_nav11.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav12 a { background: rgba(0, 0, 0, 0) url("../images/about_nav12.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav13 a { background: rgba(0, 0, 0, 0) url("../images/about_nav13.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav14 a { background: rgba(0, 0, 0, 0) url("../images/about_nav14.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav15 a { background: rgba(0, 0, 0, 0) url("../images/about_nav15.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav16 a { background: rgba(0, 0, 0, 0) url("../images/about_nav16.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav17 a { background: rgba(0, 0, 0, 0) url("../images/about_nav17.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav18 a { background: rgba(0, 0, 0, 0) url("../images/about_nav18.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav19 a { background: rgba(0, 0, 0, 0) url("../images/about_nav19.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav20 a { background: rgba(0, 0, 0, 0) url("../images/about_nav20.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav21 a { background: rgba(0, 0, 0, 0) url("../images/about_nav21.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav22 a { background: rgba(0, 0, 0, 0) url("../images/about_nav22.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav23 a { background: rgba(0, 0, 0, 0) url("../images/about_nav23.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav24 a { background: rgba(0, 0, 0, 0) url("../images/about_nav24.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav25 a { background: rgba(0, 0, 0, 0) url("../images/about_nav25.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav26 a { background: rgba(0, 0, 0, 0) url("../images/about_nav26.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav27 a { background: rgba(0, 0, 0, 0) url("../images/about_nav27.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav28 a { background: rgba(0, 0, 0, 0) url("../images/about_nav28.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav29 a { background: rgba(0, 0, 0, 0) url("../images/about_nav29.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav30 a { background: rgba(0, 0, 0, 0) url("../images/about_nav30.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav31 a { background: rgba(0, 0, 0, 0) url("../images/about_nav31.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav32 a { background: rgba(0, 0, 0, 0) url("../images/about_nav32.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav33 a { background: rgba(0, 0, 0, 0) url("../images/about_nav33.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav34 a { background: rgba(0, 0, 0, 0) url("../images/about_nav34.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav35 a { background: rgba(0, 0, 0, 0) url("../images/about_nav35.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav36 a { background: rgba(0, 0, 0, 0) url("../images/about_nav36.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav37 a { background: rgba(0, 0, 0, 0) url("../images/about_nav37.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav38 a { background: rgba(0, 0, 0, 0) url("../images/about_nav38.png") no-repeat scroll 0 0;}
+.submenu .submeu_list ul li.about_nav1 a:hover, .submenu .submeu_list ul li.about_nav1 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav1.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav2 a:hover, .submenu .submeu_list ul li.about_nav2 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav2.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav3 a:hover, .submenu .submeu_list ul li.about_nav3 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav3.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav4 a:hover, .submenu .submeu_list ul li.about_nav4 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav4.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav5 a:hover, .submenu .submeu_list ul li.about_nav5 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav5.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav6 a:hover, .submenu .submeu_list ul li.about_nav6 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav6.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav7 a:hover, .submenu .submeu_list ul li.about_nav7 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav7.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav8 a:hover, .submenu .submeu_list ul li.about_nav8 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav8.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav9 a:hover, .submenu .submeu_list ul li.about_nav9 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav9.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav10 a:hover, .submenu .submeu_list ul li.about_nav10 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav10.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav11 a:hover, .submenu .submeu_list ul li.about_nav11 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav11.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav12 a:hover, .submenu .submeu_list ul li.about_nav12 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav12.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav13 a:hover, .submenu .submeu_list ul li.about_nav13 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav13.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav14 a:hover, .submenu .submeu_list ul li.about_nav14 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav14.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav15 a:hover, .submenu .submeu_list ul li.about_nav15 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav15.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav16 a:hover, .submenu .submeu_list ul li.about_nav16 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav16.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav17 a:hover, .submenu .submeu_list ul li.about_nav17 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav17.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav18 a:hover, .submenu .submeu_list ul li.about_nav18 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav18.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav19 a:hover, .submenu .submeu_list ul li.about_nav19 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav19.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav20 a:hover, .submenu .submeu_list ul li.about_nav20 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav20.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav21 a:hover, .submenu .submeu_list ul li.about_nav21 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav21.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav22 a:hover, .submenu .submeu_list ul li.about_nav22 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav22.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav23 a:hover, .submenu .submeu_list ul li.about_nav23 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav23.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav24 a:hover, .submenu .submeu_list ul li.about_nav24 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav24.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav25 a:hover, .submenu .submeu_list ul li.about_nav25 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav25.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav26 a:hover, .submenu .submeu_list ul li.about_nav26 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav26.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav27 a:hover, .submenu .submeu_list ul li.about_nav27 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav27.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav28 a:hover, .submenu .submeu_list ul li.about_nav28 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav28.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav29 a:hover, .submenu .submeu_list ul li.about_nav29 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav29.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav30 a:hover, .submenu .submeu_list ul li.about_nav30 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav30.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav31 a:hover, .submenu .submeu_list ul li.about_nav31 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav31.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav32 a:hover, .submenu .submeu_list ul li.about_nav32 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav32.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav33 a:hover, .submenu .submeu_list ul li.about_nav33 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav33.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav34 a:hover, .submenu .submeu_list ul li.about_nav34 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav34.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav35 a:hover, .submenu .submeu_list ul li.about_nav35 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav35.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav36 a:hover, .submenu .submeu_list ul li.about_nav36 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav36.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav37 a:hover, .submenu .submeu_list ul li.about_nav37 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav37.png") no-repeat scroll 0 -112px;}
+.submenu .submeu_list ul li.about_nav38 a:hover, .submenu .submeu_list ul li.about_nav38 a.on { background: rgba(0, 0, 0, 0) url("../images/about_nav38.png") no-repeat scroll 0 -112px;}
 .submenu .submeu_list ul li a {
     display: block;
     height: 102px;
@@ -1111,7 +1104,7 @@ div.cp .cp_info ul li:after{clear:both;content:'&nbsp;';height:0;line-height:0;d
 div.cp .cp_info ul li strong{text-align:right;float:left;display:block;width:100px;}
 
 /* 自定义模块涉及到的样式 */
-div.cp .table {margin:0 auto;	width:99%;clear:both;padding:3px;}
+div.cp .table {margin:0 auto;   width:99%;clear:both;padding:3px;}
 div.cp .table .l {float:left;width:20%;text-align:right;padding:3px 1px;}
 div.cp .table .r {float:left;text-align:left;padding:3px 1px;width:68%;}
 div.cp .table input.input {width:300px;height:26px;line-height:26px;}
