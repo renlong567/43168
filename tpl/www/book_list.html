@@ -11,7 +11,17 @@
             }
             if (!$('#fullname').val())
             {
-                alert('留言人姓名不能为空');
+                alert('家长姓名不能为空');
+                return false;
+            }
+            if (!$('#studentname').val())
+            {
+                alert('学生姓名不能为空');
+                return false;
+            }
+            if (!$('#studentage').val())
+            {
+                alert('学生年龄不能为空');
                 return false;
             }
             if (!$('#mobile').val())
@@ -21,7 +31,7 @@
             }
             if (!$('#content').val())
             {
-                alert('留言内容不能为空');
+                alert('详细情况不能为空');
                 return false;
             }
             $(this).ajaxSubmit({
@@ -31,7 +41,7 @@
                 'success': function (rs) {
                     if (rs.status == 'ok')
                     {
-                        alert('您的留言信息已发布，请耐心等候管理员审核，感谢您的提交');
+                        alert('您的留言信息已提交，请耐心等候我们与您联系.');
                         $.phpok.reload();
                     }
                     else
