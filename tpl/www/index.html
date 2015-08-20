@@ -66,14 +66,14 @@
             <tbody>
                 <tr>
                     <!-- php:$list = phpok('news_catelist') -->
-                    <!-- php:sort($list.sublist) -->
+                    <!-- php:$num=0; -->
                     <!-- loop from=$list.sublist key=$key value=$value -->
                     <td class="news_block" width="309" valign="top" style="padding-right: 30px;">
                         <h2 class="tit" style="padding-top: 30px;" onclick="javascript:window.location.href = '{$value.url}'">
-                            <b style="font-size: 22px; color: {if $key == '1'}#0f7361{elseif $key == '2'}#721627{else}#002147{/if}">{$value.title}</b>
-                            <span class="n" style="color: {if $key == '1'}#0f7361{elseif $key == '2'}#721627{else}#002147{/if}; text-transform: uppercase">Primary School</span>
+                            <b style="font-size: 22px; color: {if $num == '1'}#0f7361{elseif $num == '2'}#721627{else}#002147{/if}">{$value.title}</b>
+                            <span class="n" style="color: {if $num == '1'}#0f7361{elseif $num == '2'}#721627{else}#002147{/if}; text-transform: uppercase">{$value.entitle}</span>
                         </h2>
-                        <div class="mt15" style="border-top: 11px solid {if $key == '1'}#0f7361{elseif $key == '2'}#721627{else}#002147{/if}">
+                        <div class="mt15" style="border-top: 11px solid {if $num == '1'}#0f7361{elseif $num == '2'}#721627{else}#002147{/if}">
                             <a href="{$value.url}">
                                 <img src="{$value.banner.filename}" width="309" height="151" />
                             </a>
@@ -96,6 +96,7 @@
                             <!-- /loop -->
                         </ul>
                     </td>
+                    <!-- php:++$num; -->
                     <!-- /loop -->
                     <td valign="top">
                         <div class="service">
@@ -104,7 +105,7 @@
                             </h2>
                             <ul class="service_link">
                                 <li>
-                                    <a href="#">
+                                    <a href="index.php?id=zxly">
                                         <img src="images/quick_link.png">
                                     </a>
                                 </li>
@@ -126,7 +127,7 @@
                             </ul>
                             <div class="clear"> </div>
                             <div style="margin-top: 20px">
-                                <a href="#">
+                                <a href="index.php?id=xiaoyuanfengguang">
                                     <img src="images/photo_pic.png">
                                 </a>
                             </div>
