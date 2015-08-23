@@ -105,22 +105,22 @@
                             </h2>
                             <ul class="service_link">
                                 <li>
-                                    <a href="index.php?id=zxly">
+                                    <a href="index.php?id=zsjz">
                                         <img src="images/quick_link.png">
                                     </a>
                                 </li>
                                 <li style="margin-right: 0px;">
-                                    <a href="#">
+                                    <a href="index.php?id=zxly">
                                         <img src="images/quick_link2.png">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="index.php?id=jxgt">
                                         <img src="images/quick_link3.png">
                                     </a>
                                 </li>
                                 <li style="margin-right: 0px;">
-                                    <a href="mailto:51109638@qq.com">
+                                    <a href="mailto:82216453@qq.com">
                                         <img src="images/quick_link4.png">
                                     </a>
                                 </li>
@@ -131,11 +131,16 @@
                                     <img src="images/photo_pic.png">
                                 </a>
                             </div>
+                            <!-- php:$list = phpok('kefu') -->
+                            <!-- if $list.project && $list.rslist -->
                             <div style="margin-top: 20px">
-                                <a href="#">
-                                    <img src="images/libr_btn.png">
+                                <!-- loop from=$list.rslist key=$key value=$value -->
+                                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={$value.qq}&site=qq&menu=yes">
+                                    <img src="images/QQ.png">
                                 </a>
+                                <!-- /loop -->
                             </div>
+                            <!-- /if -->
                             <div class="select_box">
                                 <input id="myselect" type="text" readonly="readonly" value="友情链接">
                                 <ul class="select_ul" style="display: none;">
