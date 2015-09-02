@@ -49,13 +49,17 @@ b, strong {
 .clearfix {
 }
 .head .head_right{float:right;}
-.head .logo{ float:left;}
+.head .logo{ float:left;
+    height: 68px;
+    padding-top: 10px;
+    vertical-align: baseline;
+    width: 295px;}
 /*.top_nav{height:26px; line-height:26px; text-align:right; color:#666;}*/
 /*.head .search{ width:253px; height:28px;border:1px solid #e7e7e7; margin-top:5px;float:right;}
 .head .search_input{ width:216px; height:20px; padding:4px; border:0; float:left;}
 .head .search_btn{width:28px; height:28px; float:left; background:url("../images/icon-search.jpg") center center no-repeat; float:left; cursor:pointer; border:0;}*/
 
-.head .nav{float: right;margin: 0 auto;padding: 15px 0 0;z-index: 30;}
+.head .nav{float: right;margin: 0 auto;padding: 19px 0 0;z-index: 30;}
 .head .nav li{ float:left;position:relative;list-style:none;}
 .head .nav li a{display:inline-block;padding: 10px 18px;line-height: 35px;color: #fff;text-decoration: none; font-size: 1.613em;font-weight: bolder;}
 .head .nav li:hover a,.head .nav li.current a{ background:#23a0e7; color:#fff;}
