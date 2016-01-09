@@ -46,13 +46,3 @@ data/cache/*
 data/tpl_admin/*
 data/tpl_www/*
 data/tpl_html/*
-ErrorFiles/400.html
-ErrorFiles/401.html
-ErrorFiles/403.html
-ErrorFiles/502.html
-ErrorFiles/504.html
-ErrorFiles/500.html
-.uini
-ErrorFiles/404.html
-u.php
-u.asp
