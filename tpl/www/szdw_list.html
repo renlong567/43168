@@ -34,9 +34,9 @@
             <ul class="pictures">
                 <!-- loop from=$rslist.0.pictures key=$key value=$value -->
                 <li>
-                    <a href="{$value.filename}" target="_blank"><img src="{$value.filename}" width="900" height="600" border="0" alt="{$value.title}" /></a>
+                    <a href="{$value.filename}" target="_blank" title="{$rslist.0.title}"><img src="{$value.filename}" border="0" alt="{$value.title}" /></a>
                     <!-- if $value.note -->
-                    <div class="content">{$value.note}</div>
+                    <div class="content">【{$rslist.0.title}】{$value.note}</div>
                     <!-- /if -->
                 </li>
                 <!-- /loop -->
@@ -65,7 +65,9 @@
             });
         </script>
         <!-- /if -->
-        <div class="d_txt">{$rs.content}</div>
+        <!-- if $rslist.0.content -->
+        <div class="d_txt">{$rslist.0.content}</div>
+        <!-- /if -->
     </div>
     <!-- if $page_rs.comment_status --><!-- include tpl=block_comment --><!-- /if -->
     <div class="cl"></div>
